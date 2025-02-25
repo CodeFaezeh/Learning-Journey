@@ -36,20 +36,22 @@
     text-align: center;
     font-size: large; */
 }
-.red {
+.red-btn {
+  width: 5rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: aliceblue;
   right: 0;
   padding: 2%;
 }
-.red:hover {
+.red-btn:hover {
   background-color: rgba(0, 0, 0, 1) !important;
 }
-.blue {
+.blue-btn {
+  width: 5rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: aliceblue;
   padding: 2%;
 }
-.blue:hover {
+.blue-btn:hover {
   background-color: rgba(0, 0, 0, 1) !important;
 }
