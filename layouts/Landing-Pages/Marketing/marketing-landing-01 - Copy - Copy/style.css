@@ -1,0 +1,111 @@
+/*Color pallete:
+creamy:#d7d7c6
+brown:#1F1300
+orange:#ED9B40
+dark blue:#090C9B
+light blue:#3D52D5
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  background-color: #d7d7c6;
+  font-family: "Roboto Slab";
+}
+header {
+  width: 100vw;
+  height: 500px;
+}
+header > .main-header {
+  width: 100vw;
+  height: 100px;
+  background-color: rgba(240, 248, 255, 0.558);
+  float: left;
+}
+.main-header > .logo {
+  width: 50px;
+  height: 50px;
+  background: url(./images/Frame\ 1.svg) center center;
+  background-size: cover;
+  position: absolute;
+  left: 50px;
+  top: 25px;
+}
+.main-header > .menu-bar {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  left: 150px;
+  top: 38px;
+}
+.menu-bar > .menu-list {
+  width: 100%;
+  height: 100%;
+}
+.menu-list > li {
+  width: 20%;
+  height: 50px;
+  float: left;
+  text-align: center;
+}
+.main-header > .btns {
+  width: 200;
+  height: 25px;
+  position: fixed;
+  top: 38px;
+  right: 50px;
+}
+.btns > #login-btn,
+.btns > #signup-btn {
+  width: fit-content;
+  height: 100%;
+
+  float: left;
+  text-align: center;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btns > #login-btn {
+  border: solid 1px;
+}
+.btns > #signup-btn {
+  margin-left: 10px;
+  background-color: #ed9b40;
+}
+header > #fix-banner-header {
+  width: calc(100% - 100px);
+  height: 400px;
+  position: absolute;
+  top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: black;
+}
+h1 {
+  color: white;
+  text-transform: capitalize;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  font-size: 64px;
+ 
+}
+h1 > .heading-primary {
+  display: block;
+}
+#fix-banner-header > #photo-heading {
+  background: url(./images/Frame\ 2.svg) center center;
+  background-size: cover;
+  position: relative;
+  top: -100px;
+  left:70%;
+  width: 200px;
+  height: 200px;
+}
