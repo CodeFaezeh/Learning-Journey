@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Carter One", sans-serif;
+}
+.box {
+  width: 50%;
+  height: 50%;
+}
+.box--blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box--red {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.box--yellow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.box--black {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.btn {
+  width:5rem;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: inherit;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.277);
+  color: white;
+}
