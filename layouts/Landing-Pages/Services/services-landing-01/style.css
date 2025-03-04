@@ -26,16 +26,16 @@ body {
 /* HEADER:MENU,CTA BUTTON */
 header {
   width: 100%;
-  height: 150px;
+  height: 70px;
   position: relative;
   background-color: #14110f;
 }
 #navigation--leftside {
   position: absolute;
-  top: 25px;
-  left: 150px;
-  width: 200px;
-  height: 100px;
+  top: 15px;
+  left: 70px;
+  width: 100px;
+  height: 50px;
 }
 #navigation--leftside > .logo {
   width: 100%;
@@ -43,28 +43,28 @@ header {
 }
 #navigation--rightside {
   width: fit-content;
-  height: 100px;
+  height: 50px;
   position: absolute;
-  top: 25px;
+  top: 15px;
   right: 0;
 }
 menu {
   width: 100%;
   height: 100px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .menubar__list {
   width: 100%;
-  height: 100px;
+  height: 50px;
   align-items: center;
 }
 .menubar__list--item {
   width: fit-content;
-  height: 100px;
+  height: 50px;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
   float: left;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .list--item--name {
@@ -75,7 +75,7 @@ li > .anchor--item:hover {
   color: #f0b81b;
 }
 .btn {
-  margin-right: 150px;
+  margin-right: 100px;
 }
 .btn > .anchor--btn {
   color: #14110f;
@@ -94,16 +94,16 @@ main {
 }
 .main__background {
   width: 100vw;
-  height: 1100px;
+  height: 800px;
   background: url(./images/main-background.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
 }
 #main__heading--box {
   width: 50vw;
-  height: 200px;
+  height: 100px;
   position: absolute;
-  top: 300px;
+  top: 200px;
   left: 50%;
   transform: translate(-50%, -50%);
   align-content: center;
@@ -112,36 +112,38 @@ main {
 }
 #main__heading {
   text-transform: capitalize;
-  font-size: 100px;
+  font-size: 80px;
 }
 #main__heading--yellow {
   color: #f0b81b;
 }
 #main__heading--par {
-  font-size: 40px;
+  font-size: 30px;
 }
+/*REGISTER FORM STYLE*/
 #form__register--box {
-  width: 70vw;
-  height: 600px;
+  width: 75vw;
+  height: 500px;
   background-color: #f3f3f4;
   position: absolute;
-  top: 900px;
+  top: 700px;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 20px;
+  border-radius: 10px;
 }
+/*REGISTER FORM STYLE:LEFT SIDE*/
 #form__register--box--left {
-  width: 35%;
+  width: 40%;
   height: 100%;
   float: left;
   background-color: #f0b81b;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 #register--box--left--message {
   color: #f0f5db;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 500;
   text-align: center;
   position: relative;
   top: 50%;
@@ -153,21 +155,21 @@ main {
 }
 .message--black {
   color: #14110f;
-  font-size: 120px;
+  font-size: 90px;
   font-weight: 800;
 }
 .message--larger {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 600;
 }
-/*REGISTER FORM STYLE*/
+/*REGISTER FORM STYLE:RIGHT SIDE*/
 #form__register--box--right {
-  width: 65%;
+  width: 60%;
   height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: absolute;
-  left: 500px;
+  left: 450px;
 }
 #form__register--right--white {
   width: 100%;
@@ -192,15 +194,15 @@ main {
   padding-right: 50px;
 }
 label {
-  font-size: 24px;
+  font-size: 16px;
   color: #14110f7f;
 }
 input {
   display: block;
   border-color: #14110f7f;
-  width: 400px;
+  width: 250px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .register__item {
   margin-bottom: 50px;
@@ -210,32 +212,39 @@ input {
   margin-top: 50px;
 }
 #register__submit {
-  width: 200px;
-  font-size: 24px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
   margin-top: 50px;
   background-color: #f0b81b;
-  border-radius: 5px;
+  border-radius: 8px;
   border-color: #f0b81b;
 }
 /* HOMEPAGE SLIDE 4:SERVICES CARD  */
 #section__cards {
   width: 100vw;
-  height: 1500px;
+  height: 600px;
   position: relative;
-  top: 200px;
+  top: 250px;
+  transform: translateX(-400px);
 }
 .section__item--cards {
-  width: 450px;
+  width: 350px;
   height: inherit;
   background-color: #f3f3f4;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: solid  1.2px #14110f0b;
   position: inherit;
-  left: 300px;
-  margin-right: 40px;
+  left: 200px;
+  margin-right: 45px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
 }
 .item__cards--content {
-  width: 400px;
+  width: 300px;
   height: 90%;
   position: inherit;
   top:50%;
@@ -243,12 +252,61 @@ input {
   transform: translate(-50%,-50%);
 }
 .content--pic {
-  width: 400px;
-  height: 400px;
-  
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+
 }
 .content--pic > img {
   width: 100%;
   height: 100%;
 }
-
+.content__text{
+  text-align: center;
+}
+.content__text--title{
+  font-size: 32px;
+  font-weight: 600;
+}
+.content__text--title--detail{
+  color:#14110f4f;
+  font-size: 16px;
+  font-weight: 500;
+}
+.content__text--detailed--sentence{
+  margin-top:20px;
+  margin-bottom: 20px;
+  line-height: 25px;
+  color:#14110f7f;
+}
+.content__text--label--price{
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.content__text--price{
+  color:#f0b81b;
+  font-size: 80px;
+  font-weight: 600;
+}
+.text--price--unit--smaller{
+  font-size: 24px;
+}
+/* HOMEPAGE SLIDE 5: INFORMATION OF SERVICES INFOGRAPHIC BAR */
+#section__navbar--black--BG{
+  width:100vw;
+  height: 300px;
+  background: url(./images/black\ pattern.jpg) no-repeat center center;
+  background-size: cover;
+  position:absolute;
+  top:1750px;
+}
+.navbar__card--transparent{
+  width:350px;
+  height: 250px;
+  border: solid 1px #f0f5db;
+  border-radius: 15px;
+  display:inline-block;
+}
