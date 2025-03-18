@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*UNIVERSAL STYLE*/
+ul {
+  list-style-type: none;
+}
+/**/
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 1700px;
+  display: grid;
+  grid-template-rows: 2fr 0.5fr 1.5fr 1.5fr 150px;
+  justify-content: center;
+  align-content: center;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+/* 1.HEADER:HERO SECTION */
+.header--hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 2rem;
+}
+.header--hero--texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* width: 80%; */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.header--hero img {
+  width: 400px;
+  height: 400px;
+}
+/* 2.MAIN SECTION */
+/* 2.1. MAIN: PRODUCTS PROPERTY  */
+.main--section--one {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.sub--main--section--one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sub--main--section--one h4 {
+  margin-bottom: 1rem;
+}
+.sub--main--section--one p {
+  padding-right: 2rem;
+}
+/* 2.2. MAIN: CUSTOMER REVIEW */
+.main--section--two {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.section--two--texts blockquote {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.main--section--two img {
+  width: 300px;
+  height: 250px;
+}
+/* 3.BESTSELLING PRODUCTS */
+.main--section--three {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.section--three--3--columns {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.section--three--3--columns div img {
+  width: 260px;
+  height: 170px;
+}
+.section--three--vertical--items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section--three--vertical--items div {
+  line-height: 2rem;
+}
+.flex--row {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  align-self: end;
+}
