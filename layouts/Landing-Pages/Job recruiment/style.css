@@ -1,0 +1,106 @@
+/* UNIVERSAL STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+/* COMPONENTS */
+/* HEADER */
+header {
+}
+/* HEADER:TOP BLACK HEADER */
+.top-header-black {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 56px;
+  padding-right: 56px;
+  font-weight: 600;
+}
+/* HEADER ICONS */
+.icon-header {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-header svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+/* .icon-header ~ .text-icon {
+  color: #fff;
+} */
+.top-left_flex {
+  display: flex;
+  gap: 2rem;
+}
+/* for aligning icon with text(span) */
+.box-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff; /* Default color added */
+}
+
+.top-right_flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.box-uplode-cv {
+  margin-right: 1rem;
+}
+/* SETTING BACKGROUND FOR SOCAIL ICONS */
+.box-social-icon {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.129);
+  border-radius: 2.5px;
+  position: relative;
+  transition: 500ms;
+}
+.social-icon {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+}
+/* HEADER:TOP BLACK HEADER : HOVERING*/
+.box-header:hover {
+  color: rgb(210, 209, 209);
+}
+.box-header:hover svg {
+  fill: rgb(210, 209, 209);
+}
+.box-social-icon:hover {
+  background-color: green;
+}
+.box-social-icon::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(0, 0, 0, 0.719);
+  color: #ffffffd4;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+  transition: 500ms;
+  border-radius: 5px;
+  opacity: 0;
+}
+.box-social-icon:hover::after {
+  opacity: 1;
+}
