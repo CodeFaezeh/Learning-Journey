@@ -6,6 +6,11 @@
 }
 a {
   text-decoration: none;
+  letter-spacing: 0.055rem;
+}
+ul,
+li {
+  list-style-type: none;
 }
 body {
   font-family: "Lato", sans-serif;
@@ -61,7 +66,8 @@ header {
   margin-right: 1rem;
 }
 /* SETTING BACKGROUND FOR SOCAIL ICONS */
-.box-social-icon {
+.box-social-icon:link,
+.box-social-icon:visited {
   width: 25px;
   height: 25px;
   background-color: rgba(255, 255, 255, 0.129);
@@ -104,3 +110,84 @@ header {
 .box-social-icon:hover::after {
   opacity: 1;
 }
+/* HEADER:BOTTOM WHITE HEADER */
+.bot-header-white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+/* LEFT */
+.box-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.box-logo img {
+  width: 60px;
+  height: 60px;
+}
+.box-logo span {
+  display: block;
+  letter-spacing: 0.55px;
+  margin-bottom: 0.1rem;
+  font-size: 20px;
+}
+.bold {
+  font-weight: 800;
+}
+/* RIGHT */
+.menubar-box-display-flex--header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  transition: 500ms;
+}
+.menubar-box-display-flex--header-right a:link,
+.menubar-box-display-flex--header-right a:visited {
+  color: black;
+  font-weight: 600;
+}
+.button-hire {
+  background-color: yellow;
+  padding: 20px 30px 20px 30px;
+  border-radius: 5px;
+  transition: 500ms;
+}
+/* HAM MENU */
+.menu-hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.menu-hamburger span {
+  background-color: black;
+  border-radius: 5px;
+  height: 3.5px;
+  margin-bottom: 6px;
+}
+.line-one {
+  width: 35px;
+}
+.line-two {
+  width: 25px;
+}
+/* HEADER:BOTTOM RIGHT HEADER : HOVERING*/
+.menubar li:hover {
+  border-bottom: solid green 1px;
+}
+.button-hire:hover {
+  background-color: green;
+}
+/* MAIN */
+/* BANNER */
