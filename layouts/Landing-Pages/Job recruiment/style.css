@@ -35,6 +35,11 @@ body {
   transition: 500ms;
   font-weight: 600;
 }
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 /* HEADER */
 /* HEADER:TOP BLACK HEADER */
 .top-header-black {
@@ -215,7 +220,7 @@ main {
       rgba(10, 58, 19, 0.7),
       rgba(43, 138, 62, 0.2)
     ),
-    url(./Assets/images/magnet-me-315vPGsAFUk-unsplash.jpg);
+    url(./Assets/images/banner.jpg);
   background-size: cover;
   background-position: right;
   margin: 24px auto;
@@ -227,9 +232,7 @@ main {
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+
   text-transform: capitalize;
   color: #dee2e6;
 }
@@ -250,7 +253,7 @@ main {
 .box-text-banner div {
   display: flex;
   gap: 32px;
-  margin-top: 18px;
+  margin-top: 30px;
 }
 .button-learnmore {
   background-color: #ffe066;
@@ -267,6 +270,43 @@ main {
 }
 
 /* TEXT CONTAINER SLAOGAN */
+.slogan-container {
+  text-transform: capitalize;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 60px;
+  margin-bottom: 36px; /*change when gid layout apply*/
+}
+.slogan-container p {
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+.slogan-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+.slogan-container div h2 {
+  width: 60%;
+}
+.slogan-container div i {
+  justify-self: flex-end;
+}
 .arrow-down {
   transform: rotate(-30deg);
+  width: 72px;
+  height: 72px;
+  stroke: #dee2e6;
+}
+.text-highlight {
+  background: linear-gradient(to top, #ffe06695 10%, transparent 50%);
+  display: inline;
+}
+/*STATICS CONTAINER*/
+.statics-container img {
+  width: 500px;
+  height: 700px;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
 }
