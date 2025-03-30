@@ -181,6 +181,15 @@ body {
   color: #212529;
   font-weight: 600;
 }
+.menubar li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.menubar li a svg {
+  stroke: #212529;
+}
 
 /* HAM MENU */
 .menu-hamburger {
