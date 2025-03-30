@@ -6,8 +6,9 @@ color3: #8ce99a;
 color4: #0ca678;
 color4: #212529;
 color5: #343a40;
-color6: #f8f9fa;
-color7: #dee2e6;
+color6: #868e96;
+color7: #f8f9fa;
+color8: #dee2e6;
 */
 /* UNIVERSAL STYLE */
 * {
@@ -34,6 +35,9 @@ body {
   border-radius: 5px;
   transition: 500ms;
   font-weight: 600;
+}
+.btn--yellow {
+  background-color: #ffe066;
 }
 .text-container {
   display: flex;
@@ -178,9 +182,6 @@ body {
   font-weight: 600;
 }
 
-.button-hire {
-  background-color: #ffe066;
-}
 /* HAM MENU */
 .menu-hamburger {
   display: flex;
@@ -203,7 +204,7 @@ body {
 .menubar li:hover {
   border-bottom: solid #2b8a3e 1px;
 }
-.button-hire:hover {
+.btn--yellow:hover {
   background-color: #2b8a3e;
 }
 /* MAIN */
@@ -255,17 +256,14 @@ main {
   gap: 32px;
   margin-top: 30px;
 }
-.button-learnmore {
-  background-color: #ffe066;
-}
-.button-offer {
+.btn--green {
   background-color: #8ce99a;
 }
 /*  BANNER: HOVERING*/
 .button-learnmore:hover {
   background-color: #0ca678;
 }
-.button-offer:hover {
+.btn--green:hover {
   background-color: #f8f9fa;
 }
 
@@ -303,10 +301,58 @@ main {
   display: inline;
 }
 /*STATICS CONTAINER*/
+.statics-container {
+  display: flex;
+  gap: 72px;
+  position: relative;
+}
 .statics-container img {
-  width: 500px;
+  width: 600px;
   height: 700px;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
+}
+.statics-container .text-container {
+  padding-right: 170px;
+  height: fit-content;
+  margin-bottom: 36px;
+}
+.main-text {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.12rem;
+  line-height: 1.5;
+}
+.sub-text {
+  color: #868e96;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.btn-statics {
+  width: max-content;
+  margin-top: 24px;
+}
+.diagram-container {
+  margin-right: 170px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+.diagram-box {
+  width: 280px;
+  height: 310px;
+  background-color: #b2f2bb;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.box--purple {
+  background-color: #f3d9fa;
+  margin-right: 16px;
+}
+.box--green {
+  margin-right: 180px;
 }
