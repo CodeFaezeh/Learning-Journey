@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+      }
+      button {
+        cursor: pointer;
+      }
+      .carousel {
+        position: relative;
+        width: 800px;
+        display: flex;
+        gap: 64px;
+        justify-content: center;
+        margin: 100px auto;
+        padding: 32px 32px 32px 86px;
+        background-color: #3b5bdb;
+        color: #edf2ff;
+        border-radius: 24px;
+      }
+      img {
+        width: 200px;
+        transform: scale(1.4);
+        border-radius: 20px;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+      }
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 40px;
+        height: 40px;
+
+        background-color: #edf2ff;
+        border: solid 3px #3b5bdb;
+        border-radius: 50%;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .carousel-btn--left {
+        left: -2%;
+      }
+      .carousel-btn--right {
+        right: -2%;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #3b5bdb;
+      }
+      .carousel-text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: space-between;
+      }
+      .text-review {
+        line-height: 1.5;
+        font-size: 20px;
+      }
+      .author {
+        color: #bac8ff;
+        margin-bottom: 5px;
+      }
+      .job {
+        color: #bac8ff;
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -8%;
+        display: flex;
+        gap: 5px;
+      }
+      .dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: solid 2px #3b5bdb;
+      }
+      .dot--fill {
+        background-color: #3b5bdb;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="carousel">
+      <img
+        src="./Assets/person-portraite.jpg"
+        alt="portraite of a man with glass"
+      />
+      <blockquote class="carousel-text">
+        <p class="text-review">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste esse
+          odio neque necessitatibus molestiae repudiandae vel laboriosam
+          consequuntur corrupti tempora debitis omnis rem fugit ipsa nulla unde,
+          ullam veniam.
+        </p>
+        <div>
+          <p class="author">Vicky Hladynets</p>
+          <p class="job">Photographer</p>
+        </div>
+      </blockquote>
+      <button class="carousel-btn carousel-btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button class="carousel-btn carousel-btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </section>
+  </body>
+</html>
