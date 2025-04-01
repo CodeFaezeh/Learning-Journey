@@ -23,15 +23,15 @@
         cursor: pointer;
       }
       .carousel {
-        position: relative;
         width: 800px;
+        margin: 100px auto;
+        background-color: #3b5bdb;
+        color: #edf2ff;
+        padding: 32px 32px 32px 86px;
+        position: relative;
         display: flex;
         gap: 64px;
         justify-content: center;
-        margin: 100px auto;
-        padding: 32px 32px 32px 86px;
-        background-color: #3b5bdb;
-        color: #edf2ff;
         border-radius: 24px;
       }
       img {
@@ -40,6 +40,28 @@
         border-radius: 20px;
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
       }
+
+      .carousel-text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: space-between;
+      }
+      .text-review {
+        line-height: 1.5;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+      .author {
+        color: #bac8ff;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+      .job {
+        color: #bac8ff;
+        font-size: 12px;
+      }
+      /* CONTROLS */
       .carousel-btn {
         position: absolute;
         top: 50%;
@@ -67,23 +89,7 @@
         height: 24px;
         stroke: #3b5bdb;
       }
-      .carousel-text {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        justify-content: space-between;
-      }
-      .text-review {
-        line-height: 1.5;
-        font-size: 20px;
-      }
-      .author {
-        color: #bac8ff;
-        margin-bottom: 5px;
-      }
-      .job {
-        color: #bac8ff;
-      }
+
       .dots {
         position: absolute;
         left: 50%;
