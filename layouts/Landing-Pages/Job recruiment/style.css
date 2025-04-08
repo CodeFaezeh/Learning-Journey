@@ -14,7 +14,9 @@ color9: #dee2e6;
 color10:#ebfbee;
 */
 /* UNIVERSAL STYLE */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -443,7 +445,6 @@ main {
   width: 70px;
   height: 90px;
   background-color: #0d2b13;
-  
 }
 .text-highlight--lighter {
   background: linear-gradient(to top, #ffe06642 40%, transparent 20%);
@@ -496,33 +497,33 @@ main {
   border-color: #2b8a3e;
 }
 /* Problem:in circles */
-.pics--circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  background-color: #0ca678;
+.customer-pics {
   position: relative;
 }
-.pics--circle::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top:0
+.pics--circle,
+.pics--circle::before,
+.pics--circle::after {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 5px solid #fff;
   background-color: #0ca678;
+  display: block;
 }
+.pics--circle::before,
 .pics--circle::after {
   content: "";
   position: absolute;
-  top:0;
-  left: 10px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  background-color: #0ca678;
+  top: 0;
+  z-index: 2;
+}
+.pics--circle {
+  position: relative;
+  z-index: 3;
+}
+.pics--circle::before {
+  left: -40px;
+}
+.pics--circle::after {
+  left: 40px;
 }
