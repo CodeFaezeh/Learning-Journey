@@ -412,7 +412,7 @@ main {
   width: 1400px;
   background-color: #0d2b13;
   color: #ebfbee;
-  padding: 40px;
+  padding: 40px 40px 110px 40px;
   border-radius: 20px;
   border-top-left-radius: 0;
 
@@ -471,11 +471,13 @@ main {
 }
 .list-career-priority {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 24px;
   column-gap: 16px;
   justify-items: center;
+
+  margin-bottom: 60px;
 }
 
 .list-career-priority li {
@@ -492,38 +494,40 @@ main {
   grid-column: 1/-1;
   gap: 16px;
 }
-/*career priority:HOVER */
+/*CAREER PRIRITY BOX:HOVER */
 .list-career-priority li:hover {
   border-color: #2b8a3e;
 }
-/* Problem:in circles */
+/* CUSTOMORS-PICTURES */
 .customer-pics {
-  position: relative;
+  display: flex;
+  margin-bottom: 16px;
 }
-.pics--circle,
-.pics--circle::before,
-.pics--circle::after {
+.pics--circle {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 5px solid #fff;
-  background-color: #0ca678;
-  display: block;
+  background-color: #2b8a3e;
+  margin-left: -32px;
 }
-.pics--circle::before,
-.pics--circle::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: 2;
+.circle--left {
+  background: url(./Assets/images/uifaces/face2.jpg);
+  background-size: cover;
 }
-.pics--circle {
-  position: relative;
-  z-index: 3;
+.circle--center {
+  background: url(./Assets/images/uifaces/face1.jpg);
+  background-size: cover;
 }
-.pics--circle::before {
-  left: -40px;
+.circle--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #748ffc;
+  font-weight: 800;
 }
-.pics--circle::after {
-  left: 40px;
+.paragraph-customer-pics {
+  font-size: 18px;
+  font-weight: 600;
+  word-spacing: 2px;
 }
