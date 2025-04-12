@@ -51,3 +51,45 @@ body {
     color: #dee2e6;
   }
 }
+.logo-animation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  height: 100px;
+}
+
+.gear {
+  width: 40px;
+  height: 40px;
+  animation: spin 3s linear infinite;
+}
+
+.worm {
+  font-size: 2rem;
+  animation: crawl 5s ease-in-out infinite;
+  position: relative;
+}
+
+/* چرخش چرخ‌دنده */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* حرکت کرم */
+@keyframes crawl {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 40px;
+  }
+  100% {
+    left: 0;
+  }
+}
