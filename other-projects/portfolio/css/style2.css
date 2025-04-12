@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #212529;
+}
+.header-site {
+  max-width: fit-content;
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.first-name,
+.last-name {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #f8f9fa;
+  letter-spacing: 0.5rem;
+}
+.first-name {
+  align-self: flex-end;
+}
+
+/* Hover effects */
+.alphabet {
+  height: fit-content;
+  display: inline-block;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.alphabet:hover {
+  animation: lighter 0.8s ease-in-out forwards;
+}
+
+@keyframes lighter {
+  0% {
+    font-weight: 800;
+    color: #f1f3f5;
+  }
+  25% {
+    font-weight: 600;
+    color: #e9ecef;
+  }
+  50% {
+    font-weight: 500;
+    color: #dee2e6;
+  }
+  100% {
+    font-weight: 100;
+    color: #dee2e6;
+  }
+}

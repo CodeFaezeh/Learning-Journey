@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #212529;
+}
+
+.header-site {
+  max-width: fit-content;
+  color: #fff;
+  display: flex;
+  padding: 1.6rem;
+  flex-direction: column;
+  line-height: 1;
+  font-family: "Bebas Neue", sans-serif;
+}
+.first-name,
+.last-name {
+  max-width: fit-content;
+}
+
+.first-name {
+  font-size: 2.5rem;
+  letter-spacing: 0.7rem;
+}
+
+.last-name {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .first-name {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+  .last-name {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+}
