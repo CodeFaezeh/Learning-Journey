@@ -191,9 +191,126 @@ input:checked ~ label .line:last-child {
 }
 /* SECTION: ABOUT ME */
 main {
+  position: relative;
   width: 100%;
-  height: 100vh;
   background-color: #fff4e6;
   border: solid 3px #1d00be;
   border-radius: 2rem 2rem 0 0;
+}
+.main-star--top {
+  position: absolute; /* extrude star from the flex flow */
+  top: 5rem;
+  right: 5rem;
+}
+.main-star--bottom {
+  position: absolute; /* extrude star from the flex flow */
+  bottom: 0;
+  left: 5rem;
+}
+.main-text-box {
+  font-family: "Anton SC";
+  padding-top: 15rem;
+  padding-left: 34.5rem;
+  position: relative;
+  display: inline-block;
+}
+.main-heading {
+  font-size: 7rem;
+  letter-spacing: 3.5px;
+}
+.main-sub-heading {
+  font-size: 8rem;
+  color: #1d00be;
+  position: absolute;
+  right: -50%;
+  bottom: -10%;
+  letter-spacing: 4px;
+}
+.main-cards-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 20rem; /* this will add more height to the main */
+}
+.card-maincontainer {
+  position: relative;
+  width: 31.1rem;
+  height: 36.4rem;
+}
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+}
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+.card-thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card-theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.card-style {
+  border: solid 3px;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+/*for more specifity between cards style i add their color in this part*/
+/* front side of cards */
+.card--lightblue .card-style {
+  background-color: #ccddf4;
+  color: #1d00be;
+  border-color: #1d00be;
+}
+.card--white .card-style {
+  background-color: #fff;
+  border-color: #000;
+}
+.card--darkblue .card-style {
+  background-color: #1d00be;
+  color: #ccddf4;
+  border-color: #ccddf4;
+}
+/* back side of cards */
+.card--lightblue .back-card-style {
+  background-color: #1d00be;
+  color: #ccddf4;
+  border-color: #ccddf4;
+}
+.card--white .back-card-style {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff; /*this is not working???*/
+}
+.card--darkblue .back-card-style {
+  background-color: #ccddf4;
+  color: #1d00be;
+  border-color: #1d00be;
+}
+/* styling inside of cards : typography*/
+.card-heading {
+  font-family: "Anton SC";
+  font-size: 2.4rem;
+}
+.card-description {
+  font-family: "Martian Mono";
+  font-size: 2.4rem;
+}
+.card-description span {
+  display: block;
 }
