@@ -161,12 +161,13 @@ input:checked ~ label .line:last-child {
 }
 .hero-title--white {
   position: relative;
+  color: #fff;
+  z-index: 2;
 }
 .hero-title--white::after {
-  content: "frontend";
-  color: #fff;
+  content: "";
   width: 100%;
-  height: fit-content;
+  height: 100%;
   background-color: #1d00be;
   display: inline-block;
   position: absolute;
@@ -174,6 +175,8 @@ input:checked ~ label .line:last-child {
   left: 0;
   text-align: center;
   padding: 0 1.6rem;
+  z-index: -1;
+  text-align: center; /*text is not center*/
 }
 .margin-left-sm {
   margin-left: 6rem;
@@ -339,12 +342,16 @@ main {
     transform: rotateZ(0deg);
   }
 }
+/* SECTION: RECENT PROJECT */
 .section-recent-project {
   position: relative;
   background-color: #19019e;
   height: 120vh;
+  display: flex;
+  flex-direction: column;
 }
 .cloud-banner {
+  height: 30%;
 }
 .cloud-svg {
   transform: translateY(10rem);
@@ -354,16 +361,62 @@ main {
   top: 3.2rem;
   left: 50%;
   transform: translateX(-50%);
-  animation: pulseStar 1s ease-in-out infinite;
+  animation: pulseStar 3s ease-in-out infinite;
 }
 @keyframes pulseStar {
   0% {
     transform: translateX(-50%) scale(1);
+    filter: drop-shadow(0 0 0px #ccddf4);
+    opacity: 0.9;
   }
-  50% {
+  20% {
     transform: translateX(-50%) scale(1.25);
+    filter: drop-shadow(0 0 15px #ccddf4);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(-50%) scale(0.98);
+    filter: drop-shadow(0 0 15px #ccddf4);
+    opacity: 1;
   }
   100% {
     transform: translateX(-50%) scale(1);
+    filter: drop-shadow(0 0 0px #ccddf4);
+    opacity: 0.9;
   }
+}
+.recent-project-text-box {
+  height: 70%;
+  background-color: #fceedd;
+}
+.recent-project-text-box {
+  z-index: 2;
+  font-family: "Anton SC";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+.text-box-heading {
+  font-size: 15.8rem;
+  color: #000;
+}
+.text-box-subheading {
+  position: relative;
+  font-size: 10.8rem;
+  color: #fff;
+  z-index: 2;
+  margin-top: -4rem;
+}
+.text-box-subheading::before {
+  content: "";
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #19019e;
+  z-index: -1;
 }
