@@ -406,6 +406,8 @@ main {
   color: #fff;
   z-index: 2;
   margin-top: -4rem;
+  animation: swing 2s ease-in-out;
+  animation-iteration-count: 2;
 }
 .text-box-subheading::before {
   content: "";
@@ -417,4 +419,21 @@ main {
   transform: translateX(-50%);
   background-color: #19019e;
   z-index: -1;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
