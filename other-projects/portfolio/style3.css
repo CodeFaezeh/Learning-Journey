@@ -166,17 +166,15 @@ input:checked ~ label .line:last-child {
 }
 .hero-title--white::after {
   content: "";
-  width: 100%;
+  width: 120%;
   height: 100%;
   background-color: #1d00be;
   display: inline-block;
   position: absolute;
   top: 0;
-  left: 0;
-  text-align: center;
-  padding: 0 1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
-  text-align: center; /*text is not center*/
 }
 .margin-left-sm {
   margin-left: 6rem;
