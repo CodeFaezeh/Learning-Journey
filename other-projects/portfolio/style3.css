@@ -315,9 +315,11 @@ main {
   display: block;
 }
 .star--stroke {
+  -webkit-animation: rotate 10s linear infinite;
   animation: rotate 10s linear infinite;
 }
 .star--fill {
+  -webkit-animation: reverse-rotate 10s linear infinite;
   animation: reverse-rotate 10s linear infinite;
   z-index: 2; /*it is above the card with this index*/
 }
@@ -338,8 +340,30 @@ main {
   }
 }
 .section-recent-project {
+  position: relative;
   background-color: #19019e;
+  height: 120vh;
 }
 .cloud-banner {
-  transform: translateY(20rem);
+}
+.cloud-svg {
+  transform: translateY(10rem);
+}
+.star {
+  position: absolute;
+  top: 3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulseStar 1s ease-in-out infinite;
+}
+@keyframes pulseStar {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.25);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
 }
