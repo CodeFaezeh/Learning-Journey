@@ -71,6 +71,9 @@ html {
 body {
   background-color: #ccddf4;
 }
+a {
+  text-decoration: none;
+}
 header {
   height: 100vh;
   display: flex;
@@ -436,4 +439,8 @@ main {
   100% {
     transform: rotate(0deg);
   }
+}
+.section-projects-cards {
+  height: 100vh;
+  background-color: #19019e;
 }
