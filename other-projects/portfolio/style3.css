@@ -314,3 +314,32 @@ main {
 .card-description span {
   display: block;
 }
+.star--stroke {
+  animation: rotate 10s linear infinite;
+}
+.star--fill {
+  animation: reverse-rotate 10s linear infinite;
+  z-index: 2; /*it is above the card with this index*/
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes reverse-rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+.section-recent-project {
+  background-color: #19019e;
+}
+.cloud-banner {
+  transform: translateY(20rem);
+}
