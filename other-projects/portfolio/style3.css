@@ -70,6 +70,7 @@ html {
 }
 body {
   background-color: #ccddf4;
+  font-family: "Anton SC", sans-serif;
 }
 a {
   text-decoration: none;
@@ -203,8 +204,8 @@ main {
 }
 .main-star--top {
   position: absolute; /* extrude star from the flex flow */
-  top: 5rem;
-  right: 5rem;
+  top: 10rem;
+  right: 10rem;
 }
 .main-star--bottom {
   position: absolute; /* extrude star from the flex flow */
@@ -440,7 +441,48 @@ main {
     transform: rotate(0deg);
   }
 }
+/*SECTION: PROJECTS-CARD*/
 .section-projects-cards {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.scroll-card-box {
+  width: 80%;
+  height: 70%;
+  background-color: #fff;
+  border: solid 3px #19019e;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+.card-project-img {
+  width: 50%;
+  height: 60%;
+  background-color: #55555572;
+  border-radius: 2rem;
+}
+.status-completed--green {
+  display: inline-block;
+  color: #9fca56;
+  font-size: 3rem;
   background-color: #19019e;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+.btn-projects:link,
+.btn-projects:visited {
+  color: #fff;
+  width: 80%;
+  height: 15%;
+  background-color: #19019e;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
 }
