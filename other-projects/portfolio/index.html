@@ -5,21 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faezeh.Sh</title>
     <link rel="stylesheet" href="./style3.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Martian+Mono:wght@100..800&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sen:wght@400..800&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <section class="section-header-menu">
-        <a href="#" class="btn-cta">Let's Talk</a>
+        <a href="#contacts" class="btn-cta">Let's Talk</a>
         <menu>
           <input type="checkbox" id="ham-menu" />
           <label for="ham-menu">
@@ -27,11 +20,13 @@
             <span class="line"></span>
             <span class="line"></span>
           </label>
-          <ul class="menu-bar" style="display: none">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Recent Project</a></li>
-            <li><a href="#">Contact Me</a></li>
-          </ul>
+          <div class="menu-list-container">
+            <ul class="menu-list-box">
+            <li class="menu-list-item"><a class="menu-list-anchor" href="#aboutMe">About Me</a></li>
+            <li class="menu-list-item"><a class="menu-list-anchor" href="#recent-projects--scroll">Recent Project</a></li>
+            <li class="menu-list-item"><a class="menu-list-anchor" href="#contactMe">Contact Me</a></li>
+            </ul>
+          </div>
         </menu>
       </section>
       <section class="hero">
@@ -46,7 +41,7 @@
         </p>
       </section>
     </header>
-    <main>
+    <main id="aboutMe">
       <div class="star--stroke main-star--top">
         <svg xmlns="http://www.w3.org/2000/svg" width="151" height="149" viewBox="0 0 151 149" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M75.0365 27.0373L74.7675 34.2949C73.9722 55.7546 56.7532 72.9647 35.2932 73.7491L27.4148 74.037L35.2932 74.325C56.7532 75.1094 73.9722 92.3195 74.7675 113.779L75.0365 121.037L75.3055 113.779C76.1008 92.3195 93.3198 75.1094 114.78 74.325L122.658 74.037L114.78 73.7491C93.3198 72.9647 76.1008 55.7545 75.3055 34.2949L75.0365 27.0373ZM74.0372 7.45058e-09L76.0358 0L77.3041 34.2209C78.0607 54.6337 94.4397 71.0043 114.853 71.7504L150.073 73.0377V75.0364L114.853 76.3237C94.4397 77.0698 78.0607 93.4404 77.3041 113.853L76.0358 148.074H74.0372L72.7689 113.853C72.0124 93.4404 55.6334 77.0698 35.2202 76.3237L1.11759e-08 75.0364L0 73.0377L35.2202 71.7504C55.6333 71.0043 72.0124 54.6337 72.7689 34.2209L74.0372 7.45058e-09Z" fill="#1D00BE"/>
@@ -98,7 +93,7 @@
                 Skills: 
                 <p class="card-description"> <span>HTML</span> <span>CSS<span>
                 <span>JavaScript</span>
-                <span style="display: inline; color:#1d00be">(in progress)</span>
+                <span style="text-decoration: underline;">(in progress)</span>
                 <span>GitHub</span>
               </p>
               </p>
@@ -167,21 +162,48 @@
 <section id="recent-projects--scroll" class="section-projects-cards">
   <div class="scroll-card-box">
     <div class="card-project-status">
-      <div class="status-completed--green">Completed</div>
+      <p class="status-completed--green">Completed</p>
     </div>
-    <div class="card-project-img"></div>
-    <div class="card-project-name-box">Project name
-      <p class="project-name">Lorem ipsum</p>
+    <div class="card-project-img">
+      <img src="./assets/projects sample/jobbama.png" alt="project sample jobbama a website for finding job" class="project-img">
     </div>
-    <div class="card-project-summery">summery
-      <p class="project-summery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur ut quisquam suscipit rerum architecto ab recusandae itaque ea, hic minima? Aliquid quae consequatur exercitationem optio excepturi, atque necessitatibus voluptatibus.</p>
-    </div>
+    <p class="project-name">Hiring Agency Landing Page</p>
+    <p class="project-summery">A responsive landing page designed for a fictional hiring agency, focusing on clean layout, modern style, and visual hierarchy.This was a practice project aimed at improving layout skills using CSS Grid and Flexbox, with attention to typography and mobile responsiveness.
+      </p>
     <div class="card-project-tools">
-      <p class="tools-htmlcss">Html & Css</p>
-      <p class="tools-js">Js</p>
+      <p class="tools-htmlcss tag-tools-box">Html & Css</p>
+      <p class="tools-js tag-tools-box">Js</p>
     </div>
   </div>
   <a href="#" class="btn-projects">See All projects</a>
+</section>
+<section id="contactMe"class="section-contacts">
+<div class="contacts-box" id="contacts">
+    <p class="logo-name"> <span class="display-block">Faezeh <span class="larger color-green">.</span></span>Shabnnnejad</p>
+    <div class="contacts-info">
+      <a href="https://www.linkedin.com/in/faezeh-shabannejad/overlay/contact-info/" class="linkedin contact ">Linkdin</a>
+      <a href="mailto:faezeh.shabannejad@gmail.com" class="gmail contact ">Gmail</a> 
+      <p href="mailto:faezeh.shabannejad@gmail.com" class="contact gmail-address">faezeh.shabannejad@gmail.com</p>
+      <a  href="tel:098991070847"class="tel contact">TEl</a>
+     <p href="tel:098991070847" class="contact tel-number">098-991090847</p> 
+    </div>
+  
+</div>
+<div class="contacts-scroll-box">
+  <div class="scrolle-inner">
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+    <!-- Duplicate -->
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+    <p class="scroll-box-message">Let's Talk</p>
+  </div>
+  </div>
 </section>
   </body>
 </html>
