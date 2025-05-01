@@ -4,3 +4,6 @@
   background-color: #77cce9;
   margin: 200px auto;
 }
+.circle {
+  clip-path: circle(50% at left top);
+}
