@@ -1,9 +1,13 @@
 .shape {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: #77cce9;
   margin: 200px auto;
 }
-.circle {
-  clip-path: circle(50% at left top);
+/* .circle {
+  clip-path: circle(50%);
+} */
+.elipse {
+  /* clip-path : elipse(rx ry at cx cy); */
+  clip-path: ellipse(80px 50px at 50% 50%);
 }
