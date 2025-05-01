@@ -9,5 +9,9 @@
 } */
 .elipse {
   /* clip-path : elipse(rx ry at cx cy); */
-  clip-path: ellipse(80px 50px at 50% 50%);
+  /* clip-path: ellipse(80px 50px at 50% 50%); */
+}
+.inset {
+  /* clip-path: inset(top right bottom left round(border-radius)); */
+  /* clip-path: inset(20px 30px 40px 10px round 50px); */
 }
