@@ -86,7 +86,7 @@
             weatherIcon.src = "./contents/images/mist.png";
           }
           document.querySelector(".weather-container").style.display = "block";
-          //Bug: the card is not display none at first -> Solved : it was because of line 92:console.log(checkWeather("tehran")) was called
+          // SOLVED: the card is not display none at first -> Solved...
         }
       }
       // console.log(checkWeather("tehran"));
@@ -94,7 +94,7 @@
         checkWeather(searchBox.value);
         // document.querySelector(".weather-container").style.display = "block";
       });
-      //BUG : when we search  a 404 example case the card seems first block and then none-> solved
+      // SOLVED: when we search  a 404 example case the card seems first block and then none-> solved
     </script>
   </body>
 </html>
