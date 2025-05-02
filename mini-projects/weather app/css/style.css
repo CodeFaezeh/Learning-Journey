@@ -53,6 +53,16 @@ body {
 .search button img {
   width: 50%;
 }
+.error-container {
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  display: none;
+}
+.weather-container {
+  display: none;
+}
 .weather-icon {
   width: 50%;
   max-width: 17rem;

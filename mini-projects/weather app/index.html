@@ -23,6 +23,9 @@
         <input type="text" placeholder="enter city name" spellcheck="false" />
         <button><img src="./contents/images/search.png" /></button>
       </div>
+      <div class="error-container">
+        <p>Invalid city name</p>
+      </div>
       <div class="weather-container">
         <img
           src="./contents/images/rain.png"
@@ -58,30 +61,40 @@
       const weatherIcon = document.querySelector(".weather-icon");
       async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-        var data = await response.json();
-        console.log(data);
-        document.querySelector(".city").innerHTML = data.name;
-        document.querySelector(".temp").innerHTML =
-          Math.round(data.main.temp) + "&deg;";
-        document.querySelector(".humidity").innerHTML =
-          data.main.humidity + "%";
-        document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
-        if (data.weather[0].main === "Clouds") {
-          weatherIcon.src = "./contents/images/clouds.png";
-        } else if (data.weather[0].main === "Clear") {
-          weatherIcon.src = "./contents/images/clear.png";
-        } else if (data.weather[0].main === "Rain") {
-          weatherIcon.src = "./contents/images/rain.png";
-        } else if (data.weather[0].main === "Drizzle") {
-          weatherIcon.src = "./contents/images/drizzle.png";
-        } else if (data.weather[0].main === "Mist") {
-          weatherIcon.src = "./contents/images/mist.png";
+        if (response.status == 404) {
+          document.querySelector(".error-container").style.display = "block";
+          document.querySelector(".weather-container").style.display = "none";
+        } else {
+          document.querySelector(".error-container").style.display = "none";
+          var data = await response.json();
+          console.log(data);
+          document.querySelector(".city").innerHTML = data.name;
+          document.querySelector(".temp").innerHTML =
+            Math.round(data.main.temp) + "&deg;";
+          document.querySelector(".humidity").innerHTML =
+            data.main.humidity + "%";
+          document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+          if (data.weather[0].main === "Clouds") {
+            weatherIcon.src = "./contents/images/clouds.png";
+          } else if (data.weather[0].main === "Clear") {
+            weatherIcon.src = "./contents/images/clear.png";
+          } else if (data.weather[0].main === "Rain") {
+            weatherIcon.src = "./contents/images/rain.png";
+          } else if (data.weather[0].main === "Drizzle") {
+            weatherIcon.src = "./contents/images/drizzle.png";
+          } else if (data.weather[0].main === "Mist") {
+            weatherIcon.src = "./contents/images/mist.png";
+          }
+          document.querySelector(".weather-container").style.display = "block";
+          //Bug: the card is not display none at first -> Solved : it was because of line 92:console.log(checkWeather("tehran")) was called
         }
       }
-      console.log(checkWeather("tehran"));
+      // console.log(checkWeather("tehran"));
       searchBtn.addEventListener("click", () => {
         checkWeather(searchBox.value);
+        // document.querySelector(".weather-container").style.display = "block";
       });
+      //BUG : when we search  a 404 example case the card seems first block and then none-> solved
     </script>
   </body>
 </html>
