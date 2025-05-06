@@ -1,5 +1,117 @@
 /***************/
+/***************/
 /* MAX-WIDTH = 1340 PX = 83.75 EM */
-@media (max-width: 83.75rem) {
+@media (max-width: 83.75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    padding: 6.4rem 6.4rem;
+  }
+}
+/*menu for mobiles*/
+menu {
+  display: none;
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 1244 PX =  77.75EM */
+@media (max-width: 77.75em) {
+  html {
+    font-size: 53.125%;
+  }
+  .container {
+    padding: 3.2rem 6.4rem;
+  }
+  header {
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-text-job {
+    grid-row: 2;
+  }
+  .navigation-box-desktop {
+    justify-self: end;
+    grid-column: 1/-1;
+    margin-top: -5.5rem;
+  }
+  main {
+    margin-top: 3.2rem;
+  }
+  .hero-text-current-status {
+    font-size: 2rem;
+    transform: translateX(36rem);
+  }
+  .hero-text-job {
+    font-size: 30rem;
+  }
+  .frontend-position {
+    transform: translateX(30%);
+  }
+}
+/***************/
+/* MAX-WIDTH = 1173 PX = 73.3125 EM */
+@media (max-width: 73.3125em) {
+  html {
+    font-size: 50%;
+  }
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 1078 PX = 67.375 EM */
+@media (max-width: 67.375em) {
+  html {
+    font-size: 46.875%;
+  }
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 992 PX = 62 EM */
+@media (max-width: 62em) {
+  .navigation-box-desktop {
+    display: none;
+  }
+  menu {
+    display: block;
+    margin-left: auto;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  .gird-2--coloumns {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  } /*for resetting the grid view to 1 cols*/
+  .hero-text-current-status {
+    font-size: 2.4rem;
+    justify-self: center;
+    align-self: center;
+    transform: translateX(0);
+    grid-row: 3/-3;
+  }
+  .hero-text-job {
+    font-size: 18rem;
+  }
+  .frontend-position {
+    transform: translateX(0);
+  }
+  .developer-position {
+    grid-column: 1;
+  }
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 768 PX =  EM */
+@media (max-width: 87.5em) {
+}
+/***************/
+/* MAX-WIDTH = 600 PX =  EM */
+@media (max-width: 87.5em) {
 }
 /***************/
