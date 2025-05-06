@@ -33,7 +33,7 @@ a {
 /***************/
 /* HEADER SECTION */
 header {
-  height: 10vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   gap: 28%;
@@ -60,11 +60,23 @@ header {
 .navigation-list-item {
   color: #000;
   position: relative;
-  transition: text-decoration 0.3s ease;
+  /* transition: text-decoration 0.3s ease; */
 }
-.navigation-list-item:hover {
-  text-decoration: line-through rgb(255, 0, 0);
+.navigation-list-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0.1rem;
+  background-color: rgb(255, 0, 0);
+  transition: 0.5s;
 }
+.navigation-list-item:hover::before {
+  width: 100%;
+}
+
 .navigation-list-item::after {
   content: attr(data-number);
   font-size: 0.8rem;
@@ -79,6 +91,9 @@ header {
   align-items: center;
   justify-content: center;
 }
+.list-item-zero {
+  text-decoration: line-through rgb(255, 0, 0);
+} /*current page*/
 .list-item-zero::after {
   content: "0";
 }
@@ -126,4 +141,7 @@ main {
 .hero-text-job span:hover {
   font-weight: 100;
 }
+/***************/
+/***************/
+/* HEADER SECTION */
 /***************/
