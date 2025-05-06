@@ -15,7 +15,7 @@ body {
   background-color: #f9f5f2;
 }
 .container {
-  padding: 6.4rem 3.2rem;
+  padding: 4.8rem;
 }
 ul {
   list-style: none;
@@ -36,8 +36,11 @@ header {
   height: 20vh;
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
   gap: 28%;
   text-transform: uppercase;
+  /* flex-wrap: wrap;
+  position: relative; */
 }
 .header-text-logo {
   font-size: 2.4rem;
@@ -52,7 +55,8 @@ header {
 /*********************/
 .navigation-box-desktop {
   align-self: baseline;
-  margin-top: -1rem;
+  margin-top: 3.6rem;
+  margin-left: auto;
 }
 .navigation-list {
   display: flex;
@@ -131,14 +135,12 @@ header {
 #input-navigation:checked + .menu-icon .close-text {
   display: block;
 }
-.menu-box-list {
+/* FIXME: when i open the menu the header push*/
+.menu-list {
   display: none;
 }
-#input-navigation:checked ~ .menu-box-list {
+#input-navigation:checked ~ .menu-list {
   display: block;
-}
-#input-navigation:checked + body {
-  background-color: #000;
 }
 .menu-list-item {
   font-size: 5rem;
@@ -146,6 +148,7 @@ header {
 .menu-list-item:active {
   color: #888;
 }
+
 /***************/
 /***************/
 /* HEADER SECTION */

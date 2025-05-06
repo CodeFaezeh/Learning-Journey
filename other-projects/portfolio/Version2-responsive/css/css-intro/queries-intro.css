@@ -5,9 +5,6 @@
   html {
     font-size: 56.25%;
   }
-  .container {
-    padding: 6.4rem 6.4rem;
-  }
 }
 /*menu for mobiles*/
 menu {
@@ -21,7 +18,7 @@ menu {
     font-size: 53.125%;
   }
   .container {
-    padding: 3.2rem 6.4rem;
+    padding: 6.4rem 7.2rem;
   }
   header {
     height: 10rem;
@@ -67,11 +64,12 @@ menu {
   html {
     font-size: 46.875%;
   }
-}
-/***************/
-/***************/
-/* MAX-WIDTH = 992 PX = 62 EM */
-@media (max-width: 62em) {
+  header {
+    position: relative;
+  }
+  .header-text-job {
+    display: none;
+  } /*UI/UX reason, in hero is written the job*/
   .navigation-box-desktop {
     display: none;
   }
@@ -79,6 +77,16 @@ menu {
     display: block;
     margin-left: auto;
   }
+  .menu-icon {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+  }
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 992 PX = 62 EM */
+@media (max-width: 62em) {
   main {
     display: flex;
     justify-content: center;
@@ -87,7 +95,7 @@ menu {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-  } /*for resetting the grid view to 1 cols*/
+  } /*hero grid : for resetting the grid view to 1 cols*/
   .hero-text-current-status {
     font-size: 2.4rem;
     justify-self: center;
