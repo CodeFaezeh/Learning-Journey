@@ -1,0 +1,124 @@
+/***************/
+/* GENERALS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Mona Sans", serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #f9f5f2;
+}
+.container {
+  padding: 4% 2%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.grid {
+  display: grid;
+}
+.gird-2--coloumns {
+  grid-template-columns: 0.5fr 2fr;
+}
+/***************/
+/***************/
+/* HEADER SECTION */
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  gap: 28%;
+  text-transform: uppercase;
+}
+.header-text-logo {
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+.header-text-job {
+  font-size: 1.6rem;
+}
+.navigation-box-desktop {
+  align-self: baseline;
+  margin-top: -1rem;
+}
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+}
+.navigation-list-item {
+  color: #000;
+  position: relative;
+}
+.navigation-list-item::after {
+  content: attr(data-number);
+  font-size: 0.8rem;
+  border: 0.1rem solid #000;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.5rem;
+  right: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ;
+}
+.list-item-zero::after {
+  content: "0";
+}
+.list-item-one::after {
+  content: "1";
+}
+.list-item-two::after {
+  content: "2";
+}
+.list-item-three::after {
+  content: "3";
+}
+@keyframes line-through {
+  0% {
+    text-decoration: line-through red;
+    opacity: 0;
+  }
+  100% {
+    text-decoration: line-through red;
+    opacity: 1;
+  }
+}
+/***************/
+/***************/
+/* HEADER SECTION */
+main {
+  overflow: hidden;
+}
+.section-hero {
+  max-width: 80%;
+}
+.hero-text-current-status {
+  justify-self: end;
+  max-width: 50%;
+  grid-row: 1/-1;
+}
+.hero-text-job {
+  font-size: 30rem;
+}
+.frontend-position {
+  transform: translateX(50%);
+}
+.developer-position {
+  grid-column: 1/-1;
+}
+/***************/
