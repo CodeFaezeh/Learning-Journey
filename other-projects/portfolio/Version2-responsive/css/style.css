@@ -27,7 +27,7 @@ a {
   display: grid;
 }
 .gird-2--coloumns {
-  grid-template-columns: 0.5fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 /***************/
 /***************/
@@ -60,6 +60,10 @@ header {
 .navigation-list-item {
   color: #000;
   position: relative;
+  transition: text-decoration 0.3s ease;
+}
+.navigation-list-item:hover {
+  text-decoration: line-through rgb(255, 0, 0);
 }
 .navigation-list-item::after {
   content: attr(data-number);
@@ -74,7 +78,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: ;
 }
 .list-item-zero::after {
   content: "0";
@@ -88,37 +91,39 @@ header {
 .list-item-three::after {
   content: "3";
 }
-@keyframes line-through {
-  0% {
-    text-decoration: line-through red;
-    opacity: 0;
-  }
-  100% {
-    text-decoration: line-through red;
-    opacity: 1;
-  }
-}
 /***************/
 /***************/
 /* HEADER SECTION */
 main {
   overflow: hidden;
+  height: 80vh;
 }
 .section-hero {
   max-width: 80%;
 }
 .hero-text-current-status {
+  font-size: 2.4rem;
+  font-weight: 300;
   justify-self: end;
-  max-width: 50%;
-  grid-row: 1/-1;
+  align-self: start;
+  max-width: 90%;
+  transform: translateX(36rem);
 }
 .hero-text-job {
   font-size: 30rem;
+  cursor: pointer;
 }
 .frontend-position {
-  transform: translateX(50%);
+  transform: translateX(30%);
 }
 .developer-position {
   grid-column: 1/-1;
+}
+.hero-text-job span {
+  font-weight: 900;
+  transition: font-weight 2s ease-out;
+}
+.hero-text-job span:hover {
+  font-weight: 100;
 }
 /***************/
