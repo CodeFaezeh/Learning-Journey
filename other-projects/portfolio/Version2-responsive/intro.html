@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Oswald:wght@200..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/css-intro/style-intro.css" />
@@ -14,7 +14,7 @@
     <title>Faezeh Shabannejad</title>
   </head>
   <body>
-    <header class="container">
+    <header class="container display--fixed">
       <p class="header-text-logo">Faezeh.Shabannejad</p>
       <p class="header-text-job">Frontend&nbsp; developer</p>
       <nav class="navigation-box-desktop">
@@ -23,7 +23,9 @@
             <a href="#" class="navigation-list-item list-item-zero">intro</a>
           </li>
           <li>
-            <a href="#" class="navigation-list-item list-item-one">projects</a>
+            <a href="#projects" class="navigation-list-item list-item-one"
+              >projects</a
+            >
           </li>
           <li>
             <a href="#" class="navigation-list-item list-item-two">skills</a>
@@ -44,7 +46,7 @@
           <ul class="menu-list">
             <li><a href="#" class="menu-list-item">intro</a></li>
             <li><a href="#" class="menu-list-item">skills</a></li>
-            <li><a href="#" class="menu-list-item">projects</a></li>
+            <li><a href="#projects" class="menu-list-item">projects</a></li>
             <li><a href="#" class="menu-list-item">contact</a></li>
           </ul>
         </div>
@@ -69,6 +71,72 @@
         </p>
       </section>
     </main>
-    <section class="section-projects-appear"></section>
+    <section class="section-about-me container center flex-cols">
+      <h1 class="fade-in">
+        WHO &lt;<span class="font-none-serif">AM</span>&gt; I?
+      </h1>
+
+      <div class="box-width--60-percent center bottom-border">
+        <div class="box-width--70-percent grid grid-3--coloumns grid-gap--cols">
+          <!-- box-width--50-percent" -->
+          <p class="par-about-me box-width--30-percent">
+            Frontend development wasn’t love at first sight — more like
+            frustration at first bug. But there was something satisfying about
+            breaking things and then figuring out why they broke.
+          </p>
+
+          <p class="par-about-me box-width--30-percent">
+            Now, it’s all about crafting smooth interfaces, arguing with CSS,
+            negotiating with JavaScript. Code gets messy, the browser throws a
+            fit, and somehow it all comes together.
+          </p>
+          <p class="par-about-me box-width--30-percent">
+            There’s no long résumé or grand origin story here — just a lot of
+            late nights, lots of tabs open, and a weird enjoyment of figuring
+            things out the hard way. And yes, the struggle is part of the fun.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="projects"
+      class="projects-section grid grid-2--columns container"
+    >
+      <ul class="project-nav">
+        <li data-project="0" class="project-link active">Portfolio Website</li>
+        <li data-project="1" class="project-link">Weather App</li>
+        <li data-project="2" class="project-link">Coming Soon</li>
+      </ul>
+
+      <div class="project-details">
+        <div class="project-content active" data-id="0">
+          <img src="portfolio-screenshot.png" alt="Portfolio preview" />
+          <p>
+            <strong>Description:</strong> My personal portfolio built with HTML,
+            CSS & JS.
+          </p>
+          <p>
+            <strong>Process:</strong> I learned to structure semantic HTML, use
+            IntersectionObserver for animations, and manage responsive layouts.
+          </p>
+          <p><a href="#">Live Demo</a> | <a href="#">GitHub</a></p>
+        </div>
+
+        <div class="project-content" data-id="1">
+          <p>
+            <strong>Description:</strong> A weather app using OpenWeather API.
+          </p>
+          <p>
+            <strong>Process:</strong> I learned how to fetch and render API
+            data, handle loading states, and display error messages.
+          </p>
+        </div>
+
+        <div class="project-content" data-id="2">
+          <p>Coming soon. New projects are in progress...</p>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
