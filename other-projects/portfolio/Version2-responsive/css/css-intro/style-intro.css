@@ -63,7 +63,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.8rem;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 .navigation-list-item,
 .menu-list-item {
@@ -126,24 +126,46 @@ header {
   font-size: 2.2rem;
   display: inline-block;
 }
+/*FIXME: problem the animation for apearing close tag*/
 .menu-icon .close-text {
   display: none;
+  transform: rotate(45deg);
+  opacity: 0;
 }
 #input-navigation:checked + .menu-icon .open-text {
   display: none;
 }
 #input-navigation:checked + .menu-icon .close-text {
+  transition: all 2s ease-out; /*FIXME:*/
+  transform: rotate(360deg);
+  opacity: 1;
   display: block;
+}
+.menu-list-box {
+  display: none;
+  position: absolute;
+  top: 100%; /* right below the header */
+  right: 0;
+  width: 100vw;
+  background-color: #f9f5f2;
+  box-shadow: 0 10px 0 #000;
+  z-index: 999;
+  padding: 2rem;
 }
 /* FIXME: when i open the menu the header push*/
-.menu-list {
-  display: none;
-}
-#input-navigation:checked ~ .menu-list {
+/*SOLVED: by positioning absolute*/
+#input-navigation:checked ~ .menu-list-box {
   display: block;
 }
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 .menu-list-item {
-  font-size: 5rem;
+  font-size: 3.2rem;
 }
 .menu-list-item:active {
   color: #888;
@@ -151,7 +173,7 @@ header {
 
 /***************/
 /***************/
-/* HEADER SECTION */
+/* HERO SECTION */
 main {
   overflow: hidden;
   height: 80vh;

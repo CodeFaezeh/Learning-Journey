@@ -1,6 +1,6 @@
 /***************/
 /***************/
-/* MAX-WIDTH = 1340 PX = 83.75 EM */
+/* MAX-WIDTH = 1340 PX = 83.75 EM  DESKTOP*/
 @media (max-width: 83.75em) {
   html {
     font-size: 56.25%;
@@ -38,10 +38,7 @@ menu {
   }
   main {
     margin-top: 3.2rem;
-  }
-  .hero-text-current-status {
-    font-size: 2rem;
-    transform: translateX(36rem);
+    margin-top: 10rem;
   }
   .hero-text-job {
     font-size: 30rem;
@@ -55,6 +52,11 @@ menu {
 @media (max-width: 73.3125em) {
   html {
     font-size: 50%;
+  }
+  .hero-text-current-status {
+    width: 70%;
+    justify-self: flex-end;
+    margin-right: 6.4rem;
   }
 }
 /***************/
@@ -82,11 +84,6 @@ menu {
     top: 50%;
     right: 10%;
   }
-}
-/***************/
-/***************/
-/* MAX-WIDTH = 992 PX = 62 EM */
-@media (max-width: 62em) {
   main {
     display: flex;
     justify-content: center;
@@ -97,6 +94,9 @@ menu {
     justify-content: center;
   } /*hero grid : for resetting the grid view to 1 cols*/
   .hero-text-current-status {
+    width: 30%;
+    text-align: center;
+    justify-self: flex-end;
     font-size: 2.4rem;
     justify-self: center;
     align-self: center;
@@ -104,7 +104,8 @@ menu {
     grid-row: 3/-3;
   }
   .hero-text-job {
-    font-size: 18rem;
+    text-align: center;
+    font-size: 24rem;
   }
   .frontend-position {
     transform: translateX(0);
@@ -115,11 +116,59 @@ menu {
 }
 /***************/
 /***************/
-/* MAX-WIDTH = 768 PX =  EM */
-@media (max-width: 87.5em) {
+/* MAX-WIDTH = 992 PX = 62 EM */
+@media (max-width: 62em) {
+  html {
+    font-size: 43.75%;
+  }
+  .section-main {
+    font-size: 22rem;
+    padding: 2rem;
+  }
+  .hero-text-job {
+    font-size: 24rem;
+  }
 }
 /***************/
-/* MAX-WIDTH = 600 PX =  EM */
-@media (max-width: 87.5em) {
+/* MAX-WIDTH = 910 PX = 56.875 EM */
+@media (max-width: 56.875em) {
+  html {
+    font-size: 37.5%;
+  }
+  .hero-text-current-status {
+    font-size: 3rem;
+  }
+  .hero-text-job {
+    font-size: 26rem;
+  }
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 768 PX = 48 EM */
+@media (max-width: 48em) {
+  html {
+    font-size: 34.375%;
+  }
+  .hero-text-current-status {
+    font-size: 3.5rem;
+    width: 40%;
+  }
+  .hero-text-job {
+    font-size: 25rem;
+  }
+}
+/***************/
+/* MAX-WIDTH = 600 PX = 37.5 EM */
+@media (max-width: 37.5em) {
+  html {
+    font-size: 31.25%;
+  }
+  .hero-text-current-status {
+    font-size: 15%;
+    width: 50%;
+  }
+  .hero-text-job {
+    font-size: 90%;
+  }
 }
 /***************/

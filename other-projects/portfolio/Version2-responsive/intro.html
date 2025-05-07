@@ -39,13 +39,15 @@
           <span class="open-text">Menu</span>
           <span class="close-text">Close</span>
         </label>
-
-        <ul class="menu-list">
-          <li><a href="#" class="menu-list-item">intro</a></li>
-          <li><a href="#" class="menu-list-item">skills</a></li>
-          <li><a href="#" class="menu-list-item">projects</a></li>
-          <li><a href="#" class="menu-list-item">contact</a></li>
-        </ul>
+        <div class="menu-list-box">
+          <!-- Add this line(42 menu-list-box) to give a flex property to menu-list , beacause of it's position propery it is not posible -->
+          <ul class="menu-list">
+            <li><a href="#" class="menu-list-item">intro</a></li>
+            <li><a href="#" class="menu-list-item">skills</a></li>
+            <li><a href="#" class="menu-list-item">projects</a></li>
+            <li><a href="#" class="menu-list-item">contact</a></li>
+          </ul>
+        </div>
       </menu>
     </header>
     <main class="section-main">
@@ -67,5 +69,6 @@
         </p>
       </section>
     </main>
+    <section class="section-projects-appear"></section>
   </body>
 </html>
