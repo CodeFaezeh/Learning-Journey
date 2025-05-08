@@ -15,7 +15,9 @@ html {
 }
 body {
   font-family: sans-serif;
-  background: linear-gradient(to bottom left, #28b487, #7dd56f);
+  height: 100vh;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  color: #333;
 }
 header {
   display: flex;
@@ -24,11 +26,16 @@ header {
   gap: 5%;
   margin-top: 6rem;
 }
-.madal {
+/* main {
+  width: 100%;
+} */
+.modal {
   width: 60%;
   height: 80vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+} /*after decoration it would become .show-modal as a class to add via js*/
+.close-modal {
+  margin-left: auto;
 }
-.close-modal;
