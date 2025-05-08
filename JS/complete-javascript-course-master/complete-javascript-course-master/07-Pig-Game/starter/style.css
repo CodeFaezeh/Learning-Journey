@@ -14,10 +14,7 @@ html {
   align-items: center;
   justify-content: center;
 }
-.flex-space-between {
-  justify-content: space-between;
-  height: 100%;
-}
+
 .flex-gap {
   gap: 1rem;
 }
@@ -25,7 +22,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Cal Sans', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to top right, #000 0%, #fff 100%);
   /* display: flex;
   align-items: center;
@@ -45,42 +42,55 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  box-shadow: 0 6rem 3rem rgba(0, 0, 0, 0.3);
 }
 .box-player {
-  width: 50%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 .section-player-colored {
-  background-color: #888888b3;
+  background: linear-gradient(to top right, #888 0%, #fff 100%);
 }
+.inner-box-player {
+  height: 80%;
+}
+.inner-box-player.flex-gap {
+  gap: 8rem;
+} /*restarting from general flex gap*/
 h2 {
   font-size: 4.4rem;
-  margin-top: 1rem;
+  letter-spacing: 0.2rem;
 }
-p {
-  font-size: 2.4rem;
+.sum-of-scores {
+  font-size: 5.4rem;
+  font-weight: 600;
+}
+.box-current-scores {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+.current-scores {
+  font-size: 3rem;
 }
 .box-current-scores {
   border: solid 0.2rem #000;
   border-radius: 5px;
-  padding: 1.6rem 3.2rem;
-  margin-bottom: 1rem;
-  margin-top: auto;
+  padding: 1.6rem 6.4rem;
 }
 .container-btns {
-  width: 100%;
-  height: 80%;
+  width: fit-content;
+  height: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  /* padding-top: 3rem;
+  padding-bottom: 1rem; */
 }
 .btn {
   border: none;
-  padding: 0.4rem 1.6rem;
+  padding: 1rem 1.6rem;
   border-radius: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 400;
   background-color: #33333394;
   color: #fff;
@@ -88,6 +98,6 @@ p {
 /* .btn-new-game {
   margin-top: 1.5rem;
 } */
-.btn-roll-dice {
+/* .btn-roll-dice {
   margin-top: auto;
-}
+} */

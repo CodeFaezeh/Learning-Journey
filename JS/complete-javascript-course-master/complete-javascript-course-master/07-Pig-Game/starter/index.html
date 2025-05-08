@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>07-PIG GAME</title>
   </head>
   <body>
     <main>
-      <section
-        class="section-player-colored box-player player-1 flex-vertically flex-space-between"
-      >
-        <div class="box-player player-2 flex-vertically flex-space-between">
+      <section class="section-player-colored box-player player-1">
+        <div class="inner-box-player flex-vertically flex-gap">
           <h2>Player 1</h2>
           <p class="sum-of-scores">0</p>
           <div class="box-current-scores flex-vertically flex-gap">
@@ -20,10 +24,8 @@
           </div>
         </div>
       </section>
-      <section
-        class="section-player-colored box-player player-1 flex-vertically flex-space-between"
-      >
-        <div class="box-player player-2 flex-vertically flex-space-between">
+      <section class="box-player player-2">
+        <div class="inner-box-player flex-vertically flex-gap">
           <h2>Player 2</h2>
           <p class="sum-of-scores">0</p>
           <div class="box-current-scores flex-vertically flex-gap">
@@ -33,7 +35,7 @@
         </div>
       </section>
       <div class="container-btns">
-        <div class="flex-vertically flex-space-between flex-gap">
+        <div class="flex-vertically flex-gap">
           <button class="btn btn-new-game">New game</button>
           <button class="btn btn-roll-dice">Roll dice</button>
           <button class="btn btn-hold">Hold</button>
