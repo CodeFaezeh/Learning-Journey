@@ -52,8 +52,8 @@ main {
   background: linear-gradient(to top right, #888 0%, #fff 100%);
 }
 .inner-box-player {
-  height: 80%;
-}
+  height: 100%;
+} /*SOLVED: the problem-> it was not vertically aligned so instead of 80% it is changed to 100%*/
 .inner-box-player.flex-gap {
   gap: 8rem;
 } /*restarting from general flex gap*/
@@ -81,10 +81,9 @@ h2 {
   width: fit-content;
   height: 100%;
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  /* padding-top: 3rem;
-  padding-bottom: 1rem; */
+  transform: translate(-50%);
 }
 .btn {
   border: none;
