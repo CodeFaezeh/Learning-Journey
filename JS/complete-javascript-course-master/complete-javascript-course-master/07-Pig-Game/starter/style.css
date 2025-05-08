@@ -29,7 +29,7 @@ body {
   justify-content: center; */
 }
 main {
-  width: 60%;
+  width: 70%;
   height: 80%;
   /* padding: 2.4rem 3.2rem; */
   background-color: #fff;
@@ -51,14 +51,15 @@ main {
 .section-player-colored {
   background: linear-gradient(to top right, #888 0%, #fff 100%);
 }
-.inner-box-player {
+.inner-box-player,
+.inner-container-btns {
   height: 100%;
 } /*SOLVED: the problem-> it was not vertically aligned so instead of 80% it is changed to 100%*/
 .inner-box-player.flex-gap {
   gap: 8rem;
 } /*restarting from general flex gap*/
 h2 {
-  font-size: 4.4rem;
+  font-size: 6.4rem;
   letter-spacing: 0.2rem;
 }
 .sum-of-scores {
@@ -81,11 +82,16 @@ h2 {
   width: fit-content;
   height: 100%;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
+}
+.flex-restart-justify {
+  justify-content: space-around;
 }
 .btn {
+  width: fit-content;
+  height: 5rem;
   border: none;
   padding: 1rem 1.6rem;
   border-radius: 0.5rem;
@@ -93,10 +99,51 @@ h2 {
   font-weight: 400;
   background-color: #33333394;
   color: #fff;
+  box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.6);
 }
-/* .btn-new-game {
-  margin-top: 1.5rem;
-} */
-/* .btn-roll-dice {
-  margin-top: auto;
-} */
+.btn-new-game {
+  background-color: rgba(255, 0, 0, 0.49);
+}
+@media (max-width: 1229px) {
+  html {
+    font-size: 46.2%;
+  }
+  /* .player-1 {
+    padding-right: 20rem;
+  }
+  .player-2 {
+    padding-left: 20rem;
+  } */
+}
+@media (max-width: 898px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 34.36%;
+  }
+  main {
+    overflow: visible;
+  }
+  .container-btns {
+    top: auto; /*removeing it from the main code to set the bottom */
+    bottom: -4rem;
+    width: 100%;
+    height: fit-content;
+    z-index: 10;
+  }
+  .inner-container-btns,
+  .inner-container-btns div {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .btn {
+    height: 10rem;
+    font-weight: 800;
+  }
+  .btn-new-game {
+    background-color: rgba(255, 0, 0, 0.49);
+  }
+}
