@@ -1,5 +1,34 @@
+/*
+COLORS: 
+- main #28b487
+- secodary #7dd56f
+- accent #333
+*/
+/************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom left, #28b487, #7dd56f);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 6rem;
+}
+.madal {
+  width: 60%;
+  height: 80vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.close-modal;
