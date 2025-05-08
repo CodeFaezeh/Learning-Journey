@@ -287,6 +287,7 @@ h1 .font-none-serif {
 /***************/
 /* Section PROJECTS */
 .projects-section {
+  height: 100vh;
   display: grid;
   grid-template-columns: 30% 1fr;
   gap: 2rem;
@@ -296,6 +297,7 @@ h1 .font-none-serif {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  text-transform: uppercase;
 }
 .project-link {
   font-size: 2rem;
@@ -304,10 +306,11 @@ h1 .font-none-serif {
 }
 .project-link.active {
   text-decoration: line-through;
-  color: crimson;
+  color: rgb(255, 0, 0);
 }
 .project-details {
   position: relative;
+  width: 90%;
 }
 .project-content {
   display: none;
@@ -315,6 +318,17 @@ h1 .font-none-serif {
 }
 .project-content.active {
   display: block;
+}
+.project-content-img {
+  width: 50%;
+  height: 10vw;
+  object-position: center;
+  object-fit: cover;
+  border: #000 solid 0.5rem;
+}
+
+.project-content-text {
+  font-size: 3.2rem;
 }
 @keyframes fade {
   from {
