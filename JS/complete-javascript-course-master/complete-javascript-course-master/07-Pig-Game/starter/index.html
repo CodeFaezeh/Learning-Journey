@@ -8,28 +8,32 @@
   </head>
   <body>
     <main>
-      <div class="box-player player-1 flex-vertically flex-space-between">
-        <h2>Player 1</h2>
-        <p class="sum-of-scores">0</p>
-        <div class="box-current-scores flex-vertically flex-gap">
-          <p>Current</p>
-          <p class="current-scores">0</p>
+      <section
+        class="section-player-colored box-player player-1 flex-vertically flex-space-between"
+      >
+        <div class="box-player player-2 flex-vertically flex-space-between">
+          <h2>Player 1</h2>
+          <p class="sum-of-scores">0</p>
+          <div class="box-current-scores flex-vertically flex-gap">
+            <p>Current</p>
+            <p class="current-scores">0</p>
+          </div>
         </div>
-      </div>
-      <div class="box-player player-2 flex-vertically flex-space-between">
-        <div>
+      </section>
+      <section
+        class="section-player-colored box-player player-1 flex-vertically flex-space-between"
+      >
+        <div class="box-player player-2 flex-vertically flex-space-between">
           <h2>Player 2</h2>
           <p class="sum-of-scores">0</p>
+          <div class="box-current-scores flex-vertically flex-gap">
+            <p>Current</p>
+            <p class="current-scores">0</p>
+          </div>
         </div>
-        <div class="box-current-scores flex-vertically">
-          <p>Current</p>
-          <p class="current-scores">0</p>
-        </div>
-      </div>
+      </section>
       <div class="container-btns">
-        <div
-          class="flex-vertically flex-space-between flex-gap inner-container-btns"
-        >
+        <div class="flex-vertically flex-space-between flex-gap">
           <button class="btn btn-new-game">New game</button>
           <button class="btn btn-roll-dice">Roll dice</button>
           <button class="btn btn-hold">Hold</button>

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/*************/
+/* GENERALLS */
+.flex-vertically {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-space-between {
+  justify-content: space-between;
+  height: 100%;
+}
+.flex-gap {
+  gap: 1rem;
+}
+/*************/
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, #000 0%, #fff 100%);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+main {
+  width: 60%;
+  height: 80%;
+  /* padding: 2.4rem 3.2rem; */
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.box-player {
+  width: 50%;
+  height: 80%;
+}
+.section-player-colored {
+  background-color: #888888b3;
+}
+h2 {
+  font-size: 4.4rem;
+  margin-top: 1rem;
+}
+p {
+  font-size: 2.4rem;
+}
+.box-current-scores {
+  border: solid 0.2rem #000;
+  border-radius: 5px;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 1rem;
+  margin-top: auto;
+}
+.container-btns {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.btn {
+  border: none;
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #33333394;
+  color: #fff;
+}
+/* .btn-new-game {
+  margin-top: 1.5rem;
+} */
+.btn-roll-dice {
+  margin-top: auto;
+}
