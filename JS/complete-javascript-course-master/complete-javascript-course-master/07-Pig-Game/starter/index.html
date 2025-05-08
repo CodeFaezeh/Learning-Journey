@@ -3,11 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>07-PIG GAME</title>
   </head>
   <body>
     <main>
-      <section></section>
+      <div class="box-player player-1 flex-vertically flex-space-between">
+        <h2>Player 1</h2>
+        <p class="sum-of-scores">0</p>
+        <div class="box-current-scores flex-vertically flex-gap">
+          <p>Current</p>
+          <p class="current-scores">0</p>
+        </div>
+      </div>
+      <div class="box-player player-2 flex-vertically flex-space-between">
+        <div>
+          <h2>Player 2</h2>
+          <p class="sum-of-scores">0</p>
+        </div>
+        <div class="box-current-scores flex-vertically">
+          <p>Current</p>
+          <p class="current-scores">0</p>
+        </div>
+      </div>
+      <div class="container-btns">
+        <div
+          class="flex-vertically flex-space-between flex-gap inner-container-btns"
+        >
+          <button class="btn btn-new-game">New game</button>
+          <button class="btn btn-roll-dice">Roll dice</button>
+          <button class="btn btn-hold">Hold</button>
+        </div>
+      </div>
     </main>
   </body>
 </html>
