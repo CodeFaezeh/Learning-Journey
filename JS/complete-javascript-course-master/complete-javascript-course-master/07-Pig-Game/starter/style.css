@@ -153,6 +153,9 @@ main {
   html {
     font-size: 46.2%;
   }
+  main {
+    height: 60%;
+  }
   .container-btns {
     height: 70%;
   }
@@ -172,6 +175,9 @@ main {
 @media (max-width: 700px) {
   html {
     font-size: 34.36%;
+  }
+  main {
+    height: 50%;
   }
   /* main {
     overflow: visible;
@@ -197,5 +203,13 @@ main {
   }
   .inner-container-btns {
     height: 100%;
+  }
+}
+@media (max-width: 534px) {
+  html {
+    font-size: 28%;
+  }
+  main {
+    height: 40%;
   }
 }
