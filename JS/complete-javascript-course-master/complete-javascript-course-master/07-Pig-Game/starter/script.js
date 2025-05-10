@@ -56,29 +56,27 @@ btnRoll.addEventListener('click', function () {
 // // //  // HOLD
 let totalScorePlayer1 = 0;
 let totalScorePlayer2 = 0;
-btnHold.addEventListener(
-  'click',
-  function () {
-    if (activePlayer === 1) {
-      totalScorePlayer1 += currentScore;
-      score1El.textContent = totalScorePlayer1;
-      switchPlayer();
+btnHold.addEventListener('click', function () {
+  if (activePlayer === 1) {
+    totalScorePlayer1 += currentScore;
+    score1El.textContent = totalScorePlayer1;
+    if (totalScorePlayer1 >= 100) {
+      score1El.textContent = 'You win (:';
+      score2El.textContent = '';
     } else {
-      totalScorePlayer2 += currentScore;
-      score2El.textContent = totalScorePlayer2;
+      switchPlayer();
+    }
+  } else {
+    totalScorePlayer2 += currentScore;
+    score2El.textContent = totalScorePlayer2;
+    if (totalScorePlayer2 >= 100) {
+      score1El.textContent = '';
+      score2El.textContent = 'You win (:';
+    } else {
       switchPlayer();
     }
   }
-  //  else if (totalScorePlayer1 >= 20 || totalScorePlayer2 >= 20) {
-  //   if (totalScorePlayer1 >= 20) {
-  //     score1El.textContent = 'You win (:';
-  //     score2El.textContent = '';
-  //   } else {
-  //     score1El.textContent = '';
-  //     score2El.textContent = 'You win (:';
-  //   }
-  // }
-);
+});
 /*********************** */
 //// function restart the game
 function restartGame() {
@@ -90,6 +88,9 @@ function restartGame() {
   score1El.textContent = 0;
   score2El.textContent = 0;
   diceEl.classList.toggle('hidden');
-  activePlayer === 1 ? (activePlayer = 1) : switchPlayer();
+  // Reset active player to 1
+  player1El.classList.add('player-active');
+  player2El.classList.remove('player-active');
+  activePlayer = 1;
 }
 btnNewGame.addEventListener('click', restartGame);
