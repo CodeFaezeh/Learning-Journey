@@ -10,7 +10,7 @@ const btnRoll = document.querySelector('.btn-roll-dice');
 const btnHold = document.querySelector('.btn-hold');
 /***********************/
 // MY code for distingushing the player
-const activePlayerEl = document.querySelector('.player-active'); // FIXME: the active playet in funtion is not working but ui is work
+// const activePlayerEl = document.querySelector('.player-active'); // SOLVED: the active playet in funtion is not working but ui is work
 const player1El = document.querySelector('.player-1');
 const player2El = document.querySelector('.player-2');
 /***********************/
@@ -30,6 +30,7 @@ btnRoll.addEventListener('click', function () {
   // 2.display the dice
   diceEl.classList.remove('hidden');
   diceEl.src = `dice-${diceNumber}.png`;
+  const activePlayerEl = document.querySelector('.player-active');
   // 3.0. Check the player
   if (activePlayerEl.classList.contains('player-1')) {
     // 3. Check for roll
@@ -53,6 +54,7 @@ btnRoll.addEventListener('click', function () {
       currentScore2El.textContent = currentScorePlayer2;
     } else {
       currentScorePlayer2 = 0;
+      currentScore2El.textContent = currentScorePlayer2;
       player2El.classList.remove('player-active');
       player1El.classList.add('player-active');
     }
