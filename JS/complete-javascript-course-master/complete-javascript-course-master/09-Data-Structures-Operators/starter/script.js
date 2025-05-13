@@ -45,3 +45,30 @@ const restaurant = {
     },
   },
 };
+// destructure
+const arr = [1, 2, 3, 4];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+const d = arr[3];
+console.log(a, b, c, d);
+const [x, y, w, z] = arr;
+console.log(x, y, w, z);
+// reassigning and destructuring
+let [mainFood, secondFood] = restaurant.categories;
+console.log(mainFood, secondFood);
+[mainFood, secondFood] = [secondFood, mainFood];
+console.log(mainFood, secondFood);
+//reassigning second old method (without destructuring)
+const oldArr = [100, 200];
+let oneElement = oldArr[0];
+const temp = oneElement;
+let secondElement = oldArr[1];
+console.log(oneElement, secondElement);
+oneElement = secondElement;
+secondElement = temp;
+console.log(oneElement, secondElement);
+// Nested destructure
+const nestedArr = [1, 3, [8, 5]];
+const [first, , [second, third]] = nestedArr;
+console.log(first, second, third);
