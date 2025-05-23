@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>کتابفروشی انقلاب</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">کتابفروشی انقلاب</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="categoriesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                >دسته‌بندی‌ها</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">رمان</a></li>
+                <li><a class="dropdown-item" href="#">تاریخی</a></li>
+                <li><a class="dropdown-item" href="#">موفقیت</a></li>
+                <li><a class="dropdown-item" href="#">کودک و نوجوان</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ورود</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ثبت‌نام</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">سبد خرید</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Hero with Carousel -->
+    <header class="hero">
+      <div class="container">
+        <h1 class="display-4">کتابفروشی انقلاب</h1>
+        <p class="lead">روشنایی دانایی در دل تهران</p>
+      </div>
+    </header>
+
+    <!-- Book Suggestions -->
+    <section class="container my-5">
+      <h2 class="text-center section-title">کتاب‌های پیشنهادی</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="book-card">
+            <img
+              src="https://cdn.fidibo.com/media/cache/7a/47/7a47c407e6d469ba7152f0ac748eb2e2.jpg"
+              alt="شازده کوچولو"
+              class="book-img"
+            />
+            <h5>شازده کوچولو</h5>
+            <p>آنتوان دوسنت اگزوپری</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="book-card">
+            <img
+              src="https://cdn.fidibo.com/media/cache/e6/76/e676c594e7b1bbf0b1ffdd382d8a3f6f.jpg"
+              alt="ملت عشق"
+              class="book-img"
+            />
+            <h5>ملت عشق</h5>
+            <p>الیف شافاک</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="book-card">
+            <img
+              src="https://cdn.fidibo.com/media/cache/cf/6e/cf6efc3e6c2cdd54b45c27a236142264.jpg"
+              alt="صد سال تنهایی"
+              class="book-img"
+            />
+            <h5>صد سال تنهایی</h5>
+            <p>گابریل گارسیا مارکز</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <div class="container">
+      <div class="banner">
+        <h3>"کتاب‌ها بال‌هایی هستند که ذهن را به پرواز درمی‌آورند"</h3>
+        <p class="mt-3">- کارل ساگان</p>
+      </div>
+    </div>
+
+    <!-- Bestseller -->
+    <section class="container my-5">
+      <h2 class="text-center section-title">پرفروش‌ترین‌ها</h2>
+      <div class="row g-4">
+        <!-- Similar book-card blocks here -->
+      </div>
+    </section>
+
+    <!-- Categories Slider -->
+    <section class="container my-5">
+      <h2 class="text-center section-title">دسته‌بندی‌ها</h2>
+      <div class="category-slider">
+        <div class="category-card">رمان</div>
+        <div class="category-card">تاریخی</div>
+        <div class="category-card">کودک و نوجوان</div>
+        <div class="category-card">علمی</div>
+        <div class="category-card">موفقیت</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>درباره ما</h5>
+            <p>
+              کتابفروشی انقلاب با بیش از ۲۰ سال تجربه در عرضه کتاب‌های فارسی و
+              ترجمه، در خدمت علاقه‌مندان به فرهنگ و ادب است.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>اطلاعات تماس</h5>
+            <p>تلفن: ۰۲۱-۶۶۴۰۱۲۳۴</p>
+            <p>ایمیل: info@enghelabbooks.ir</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>آدرس</h5>
+            <p>خیابان انقلاب، نرسیده به میدان فردوسی، پلاک ۴۲۳</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
