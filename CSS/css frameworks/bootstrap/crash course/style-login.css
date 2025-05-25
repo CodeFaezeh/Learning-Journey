@@ -1,0 +1,67 @@
+/**********************/
+/*VARIABLES*/
+/**********************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body .section-login-page {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6196078431), rgba(0, 0, 0, 0.6274509804)), url(./src/img/login-background.jpg);
+  background-position: center;
+  background-size: auto;
+}
+body .section-login-page div .img-logo {
+  width: clamp(90px, 15vw, 160px);
+}
+body .box-login-form {
+  width: clamp(400px, 30%, 900px);
+}
+body .box-login-form form input {
+  background-color: transparent;
+  color: #fff;
+  border-color: rgba(141, 141, 141, 0.6);
+  height: 54px;
+}
+body .box-login-form form input::-moz-placeholder {
+  color: rgba(243, 243, 243, 0.6);
+}
+body .box-login-form form input::placeholder {
+  color: rgba(243, 243, 243, 0.6);
+}
+body .box-login-form form input:focus {
+  background-color: transparent !important;
+  border-color: #fff;
+  outline: 1rem;
+  box-shadow: 0 0 0 0.01rem rgba(255, 255, 255, 0.8);
+}
+body .box-login-form form .btn-light-black {
+  background-color: rgba(90, 90, 90, 0.6);
+  color: #fff;
+}
+body .box-login-form form .btn-light-black:hover {
+  background-color: rgba(77, 77, 77, 0.6);
+}
+body .box-login-form form p {
+  color: rgba(255, 255, 255, 0.6);
+}
+body .box-login-form form p a {
+  color: white;
+}
+body .box-login-form form p a:hover {
+  color: #bfbfbf;
+}
+
+@media (max-width: 557px) {
+  .section-login-page {
+    background: #000 !important;
+    background-image: none !important;
+  }
+}/*# sourceMappingURL=style-login.css.map */

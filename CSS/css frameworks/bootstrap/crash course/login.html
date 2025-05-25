@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/logo-icon" href="./src/img/favicon.ico" />
+    <link rel="stylesheet" href="./style-login.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <section class="section-login-page">
+      <div class="container">
+        <img
+          class="img-logo my-4 mx-2"
+          src="./src/img/netflix-logo.svg"
+          alt="netflix-logo-red"
+        />
+      </div>
+      <section class="d-flex justify-content-center align-items-center p-5">
+        <div
+          class="box-login-form bg-black bg-success bg-opacity-75 text-white rounded p-sm-5 p-1 mx-sm-4 mx-1"
+        >
+          <h2 class="fw-bold fs-1">Sign In</h2>
+          <form class="my-4 d-flex flex-column gap-3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email or mobile number"
+            />
+
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+
+            <button type="submit" class="btn btn-danger fw-semibold h-25">
+              Sign In
+            </button>
+            <p class="align-self-center" style="margin-bottom: 0 !important">
+              OR
+            </p>
+            <button type="submit" class="btn btn-light-black fw-semibold">
+              Use a sign-In Code
+            </button>
+            <p class="align-self-center">
+              <a class="link-opacity-50-hover" href="#">Forgot password?</a>
+            </p>
+            <div class="form-group form-check d-flex align-items-center gap-2">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+                style="height: 16px; width: 16px; border-radius: none"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Remember me</label
+              >
+            </div>
+            <p>
+              New to Netflix? <span><a href="#"> Sign up now.</a></span>
+            </p>
+          </form>
+        </div>
+      </section>
+    </section>
+    <footer></footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
