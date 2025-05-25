@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 5000px;
+  width: 100%;
+}
+body nav {
+  transition: background-color 0.3s ease-in-out;
+}/*# sourceMappingURL=landing.css.map */
