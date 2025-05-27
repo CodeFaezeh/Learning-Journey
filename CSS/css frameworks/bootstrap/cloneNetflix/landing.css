@@ -1,3 +1,5 @@
+/******************/
+/*UNIVERSAL*/
 *,
 *::after,
 *::before {
@@ -6,6 +8,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+/******************/
+/******************/
+/*DEFINE VARIABLES*/
+/******************/
+/******************/
 body {
   position: relative;
   height: 5000px;
@@ -13,4 +24,22 @@ body {
 }
 body nav {
   transition: background-color 0.3s ease-in-out;
-}/*# sourceMappingURL=landing.css.map */
+}
+body nav .img-logo {
+  width: clamp(43px, 15vw, 100px);
+}
+body nav .dropdown-toggle {
+  color: rgb(51, 51, 51) !important;
+}
+body nav .dropdown-toggle:hover, body nav .dropdown-toggle:active {
+  color: #000;
+}
+
+/******************/
+/******************/
+/**/
+.bg-custom-menu {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/******************//*# sourceMappingURL=landing.css.map */
