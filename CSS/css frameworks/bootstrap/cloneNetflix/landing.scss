@@ -13,37 +13,132 @@ a {
 /******************/
 /******************/
 /*DEFINE VARIABLES*/
-$black-op: rgba(0, 0, 0, 0.7);
+$black-op: rgba(0, 0, 0, 0.4);
+$black: #000;
+$grey: rgb(51, 51, 51);
+$white: #fff;
+$red: #e50914;
+
 /******************/
 /******************/
+/***NAV***/
 body {
   position: relative;
   height: 5000px;
   width: 100%;
   nav {
     transition: background-color 0.3s ease-in-out;
-    // div,
-    // .nav-link,
-    // .navbar-brand,
-    // .nav-item {
-    //   color: white !important;
-    // }
+    .text-grey-custom {
+      color: $grey;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: darken($grey, 40%);
+      }
+    }
+    .text-light-custom {
+      color: lighten($grey, 60%);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+      }
+    }
+    .navbar-nav .nav-link.active {
+      color: $red;
+      font-weight: 600;
+    }
     .img-logo {
       width: clamp(43px, 15vw, 100px);
     }
-    .dropdown-toggle {
-      color: rgb(51, 51, 51) !important;
-      &:hover,
-      &:active {
-        color: #000;
-      }
+  }
+}
+.icon-profile-custom {
+  width: 2rem;
+  height: 2rem;
+  background-color: lighten($grey, 60%);
+  border-radius: 2px;
+  transition: all 3ms ease-out;
+  &:hover {
+    background-color: $black-op;
+    box-shadow: 1px 1px 2px $grey;
+  }
+}
+/*remove the toggle from bootstrap (deactive)*/
+.menu-status {
+  .dropdown-account-info {
+    .dropdown-toggle::after {
+      display: none;
+    }
+  }
+  .btn {
+    border: none;
+    transition: all 3ms ease-in-out;
+    scale: 1;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+  .btn-light-color {
+    color: lighten($grey, 60%);
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white !important;
+    }
+  }
+  .btn-dark-color {
+    color: $grey;
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($grey, 40%) !important;
     }
   }
 }
+
 /******************/
 /******************/
 /**/
 .bg-custom-menu {
-  background-color: $black-op;
+  background-color: $black;
+}
+/*FINISH**NAV***/
+/******************/
+/******************/
+/***VIDEO***/
+.section-home-video {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  video {
+    width: 100%;
+  }
+  .home-video-style {
+    position: absolute;
+    width: 100%;
+  }
+  .video-style-top {
+    top: 0;
+    height: 40%;
+    background: linear-gradient(to top, transparent, $black);
+  }
+  .video-style-bottom {
+    bottom: 0;
+    height: 10%;
+    background: linear-gradient(to bottom, transparent, $black-op);
+  }
+}
+/*FINISH**VIDEO***/
+/******************/
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .dropdown-menu-ps-custom {
+    position: static !important;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 }
 /******************/

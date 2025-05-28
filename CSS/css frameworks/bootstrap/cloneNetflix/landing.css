@@ -17,6 +17,7 @@ a {
 /*DEFINE VARIABLES*/
 /******************/
 /******************/
+/***NAV***/
 body {
   position: relative;
   height: 5000px;
@@ -25,21 +26,105 @@ body {
 body nav {
   transition: background-color 0.3s ease-in-out;
 }
+body nav .text-grey-custom {
+  color: rgb(51, 51, 51);
+}
+body nav .text-grey-custom:hover, body nav .text-grey-custom:focus, body nav .text-grey-custom:active {
+  color: black;
+}
+body nav .text-light-custom {
+  color: #cccccc;
+}
+body nav .text-light-custom:hover, body nav .text-light-custom:focus, body nav .text-light-custom:active {
+  color: #fff;
+}
+body nav .navbar-nav .nav-link.active {
+  color: #e50914;
+  font-weight: 600;
+}
 body nav .img-logo {
   width: clamp(43px, 15vw, 100px);
 }
-body nav .dropdown-toggle {
-  color: rgb(51, 51, 51) !important;
+
+.icon-profile-custom {
+  width: 2rem;
+  height: 2rem;
+  background-color: #cccccc;
+  border-radius: 2px;
+  transition: all 3ms ease-out;
 }
-body nav .dropdown-toggle:hover, body nav .dropdown-toggle:active {
-  color: #000;
+.icon-profile-custom:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 2px rgb(51, 51, 51);
+}
+
+/*remove the toggle from bootstrap (deactive)*/
+.menu-status .dropdown-account-info .dropdown-toggle::after {
+  display: none;
+}
+.menu-status .btn {
+  border: none;
+  transition: all 3ms ease-in-out;
+  scale: 1;
+}
+.menu-status .btn:hover {
+  scale: 1.2;
+}
+.menu-status .btn-light-color {
+  color: #cccccc;
+}
+.menu-status .btn-light-color:hover, .menu-status .btn-light-color:focus, .menu-status .btn-light-color:active {
+  color: #fff !important;
+}
+.menu-status .btn-dark-color {
+  color: rgb(51, 51, 51);
+}
+.menu-status .btn-dark-color:hover, .menu-status .btn-dark-color:focus, .menu-status .btn-dark-color:active {
+  color: black !important;
 }
 
 /******************/
 /******************/
 /**/
 .bg-custom-menu {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000;
 }
 
+/*FINISH**NAV***/
+/******************/
+/******************/
+/***VIDEO***/
+.section-home-video {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.section-home-video video {
+  width: 100%;
+}
+.section-home-video .home-video-style {
+  position: absolute;
+  width: 100%;
+}
+.section-home-video .video-style-top {
+  top: 0;
+  height: 40%;
+  background: linear-gradient(to top, transparent, #000);
+}
+.section-home-video .video-style-bottom {
+  bottom: 0;
+  height: 10%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+}
+
+/*FINISH**VIDEO***/
+/******************/
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .dropdown-menu-ps-custom {
+    position: static !important;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
 /******************//*# sourceMappingURL=landing.css.map */
