@@ -28,15 +28,15 @@ body {
   width: 100%;
   nav {
     transition: background-color 0.3s ease-in-out;
-    .text-grey-custom {
-      color: $grey;
+    // .text-grey-custom {
+    //   color: $grey;
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: darken($grey, 40%);
-      }
-    }
+    //   &:hover,
+    //   &:focus,
+    //   &:active {
+    //     color: darken($grey, 40%);
+    //   }
+    // }
     .text-light-custom {
       color: lighten($grey, 60%);
 
@@ -89,14 +89,14 @@ body {
       color: $white !important;
     }
   }
-  .btn-dark-color {
-    color: $grey;
-    &:hover,
-    &:focus,
-    &:active {
-      color: darken($grey, 40%) !important;
-    }
-  }
+  // .btn-dark-color {
+  //   color: $grey;
+  //   &:hover,
+  //   &:focus,
+  //   &:active {
+  //     color: darken($grey, 40%) !important;
+  //   }
+  // }
 }
 
 /******************/
@@ -115,6 +115,8 @@ body {
   z-index: -1;
   video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .home-video-style {
     position: absolute;
@@ -122,23 +124,41 @@ body {
   }
   .video-style-top {
     top: 0;
-    height: 40%;
+    height: 10%;
     background: linear-gradient(to top, transparent, $black);
   }
   .video-style-bottom {
     bottom: 0;
-    height: 10%;
-    background: linear-gradient(to bottom, transparent, $black-op);
+    height: 5%;
+    background: linear-gradient(to bottom, transparent, #141414);
   }
 }
+.video-contents {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  img {
+    width: 40%;
+  }
+}
+.video-contents-btns {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+//how to alighn svg with text //SOLVED:
 /*FINISH**VIDEO***/
 /******************/
 /*RESPONSIVE*/
 @media (max-width: 768px) {
-  .dropdown-menu-ps-custom {
-    position: static !important;
-    width: 100%;
-    margin-top: 0.5rem;
+  .section-home-video {
+    .video-style-top {
+      height: 30%;
+    }
   }
 }
 /******************/

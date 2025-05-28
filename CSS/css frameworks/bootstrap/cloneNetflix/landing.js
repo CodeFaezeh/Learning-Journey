@@ -11,40 +11,50 @@ window.addEventListener("scroll", () => {
     navEl.classList.add("bg-custom-menu");
     navEl.classList.remove("bg-transparent");
 
-    navLinks.forEach((link) => {
-      if (!link.classList.contains("active")) {
-        link.classList.remove("text-dark-custom");
-        link.classList.add("text-light-custom");
-      }
-    });
+    // navLinks.forEach((link) => {
+    //   if (!link.classList.contains("active")) {
+    //     link.classList.remove("text-dark-custom");
+    //     link.classList.add("text-light-custom");
+    //   }
+    // });
 
-    dropdownToggle.classList.remove("text-grey-custom");
-    dropdownToggle.classList.add("text-light-custom");
+    // dropdownToggle.classList.remove("text-grey-custom");
+    // dropdownToggle.classList.add("text-light-custom");
 
-    navIconsBtn.forEach((icon) => {
-      icon.classList.remove("btn-dark-color");
-      icon.classList.add("btn-light-color");
-    });
+    // navIconsBtn.forEach((icon) => {
+    //   icon.classList.remove("btn-dark-color");
+    //   icon.classList.add("btn-light-color");
+    // });
   } else {
     navEl.classList.remove("bg-custom-menu");
     navEl.classList.add("bg-transparent");
 
-    navLinks.forEach((link) => {
-      if (!link.classList.contains("active")) {
-        link.classList.remove("text-light-custom");
-        link.classList.add("text-dark-custom");
-      }
-    });
+    // navLinks.forEach((link) => {
+    //   if (!link.classList.contains("active")) {
+    //     link.classList.remove("text-light-custom");
+    //     link.classList.add("text-dark-custom");
+    //   }
+    // });
 
-    dropdownToggle.classList.remove("text-light-custom");
-    dropdownToggle.classList.add("text-grey-custom");
+    // dropdownToggle.classList.remove("text-light-custom");
+    // dropdownToggle.classList.add("text-grey-custom");
 
-    navIconsBtn.forEach((icon) => {
-      icon.classList.remove("btn-light-color");
-      icon.classList.add("btn-dark-color");
-    });
+    // navIconsBtn.forEach((icon) => {
+    //   icon.classList.remove("btn-light-color");
+    //   icon.classList.add("btn-dark-color");
+    // });
   }
 });
+
+/*NAV LINKS STYLING COLOR :CHEKING */
+navLinks.forEach((link) => {
+  link.classList.add("text-light-custom");
+});
+dropdownToggle.classList.add("text-light-custom");
+navIconsBtn.forEach((icon) => {
+  icon.classList.add("btn-light-color");
+});
+
 /*Navbar select the active link */
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
