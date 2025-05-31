@@ -143,6 +143,7 @@ body nav .img-logo {
 .slider2 {
   position: absolute;
   top: 14rem;
+  margin-top: 2rem;
 }
 
 .carousel-indicator-custom .btn {
@@ -153,28 +154,37 @@ body nav .img-logo {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.carousel-inner {
+  overflow: visible;
+} /*Reset the bootstrap ovrflow:hiffern*/
+.carousel-item {
+  overflow: visible;
+}
 .carousel-item .card {
   width: 18%;
   margin: 2rem;
-  transition: all 2ms linear;
+  transition: all 0.2s linear;
   position: relative;
 }
 .carousel-item .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  z-index: 2;
 }
 .carousel-item .card .card-body {
+  display: none;
   height: -moz-fit-content;
   height: fit-content;
-  display: none;
+  width: 100%;
   padding: 1rem 1.5rem;
   background-color: #141414;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   position: absolute;
-  top: 20%;
-  z-index: 3;
+  top: 100%;
 }
 .carousel-item .card:hover .card-body {
   display: block;
-  z-index: 5;
+  z-index: 3;
 }
 .carousel-item img {
   width: 100%;

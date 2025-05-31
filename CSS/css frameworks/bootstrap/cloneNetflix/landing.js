@@ -38,13 +38,19 @@ navLinks.forEach((link) => {
 /*************/
 /****NavBar  FINISH*/
 /****Video Content */
-const carouselBtn = document.querySelectorAll(".carousel-btn");
-carouselBtn.forEach((btns) => {
-  btns.addEventListener("click", () => {
-    carouselBtn.forEach((btn) => {
-      btn.classList.remove("active");
+const carousels = document.querySelectorAll(".slider-box");
+
+carousels.forEach((carousel) => {
+  const buttons = carousel.querySelectorAll(".carousel-btn");
+  // select the btns from carousel
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Remove 'active' from all buttons in the SAME carousel
+      buttons.forEach((b) => b.classList.remove("active"));
+
+      // Add 'active' to the clicked one
+      btn.classList.add("active");
     });
-    btns.classList.add("active");
   });
 });
 //////////////****** */
