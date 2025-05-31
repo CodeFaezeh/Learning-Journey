@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="landing.css" />
     <title>Netflix</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <!--NAVBAR  -->
     <nav
       class="navbar navbar-expand-md bg-transparent position-fixed w-100 px-1 px-lg-5 py-2"
@@ -143,7 +143,9 @@
     </nav>
     <!-- NAVBAR FINISH -->
     <!-- VIDEO CONTENT -->
-    <div class="">
+    <!-- Hero Section -->
+    <main>
+      <!-- Hero Section -->
       <section class="section-home-video">
         <div class="home-video-style video-style-top"></div>
         <div class="home-video-style video-style-bottom"></div>
@@ -192,7 +194,1954 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
+    <!-- Hero Section Finish -->
+    <section class="section-video-sliders">
+      <!-- Slider 1 -->
+      <div class="slider-box slider1">
+        <div class="cotainer-fluid slider">
+          <div
+            class="d-flex justify-content-between align-items-center px-3 mt-4"
+          >
+            <p class="text-white fs-3 m-0"><b>Trending</b></p>
+            <div class="d-flex gap-1 carousel-indicator-custom">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active btn btn-light btn-sm carousel-btn"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                class="btn btn-light btn-sm carousel-btn"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                class="btn btn-light btn-sm carousel-btn"
+              ></button>
+            </div>
+          </div>
+          <!--  -->
+          <div id="carouselExampleIndicators" class="carousel slide slide1">
+            <div class="carousel-inner">
+              <!-- 1st Slide -->
+              <div class="carousel-item active">
+                <section class="d-flex flex-nowrap">
+                  <!-- Card 1-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv1.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 1 End -->
+                  <!-- Card 2-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv2.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2End -->
+                  <!-- Card 3-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv3.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 End -->
+                  <!-- Card 4 -->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv4.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 End -->
+                  <!-- Card 5 -->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv5.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card  5End -->
+                </section>
+              </div>
+
+              <!-- 2st Slide -->
+              <div class="carousel-item">
+                <section class="d-flex flex-nowrap">
+                  <!-- Card 1 -->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv6.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 1 End -->
+                  <!-- Card 2-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv7.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 End -->
+                  <!-- Card 3-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv8.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 End -->
+                  <!-- Card 4-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv9.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 End -->
+                  <!-- Card 5-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv10.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 5 End -->
+                </section>
+              </div>
+              <!-- 3st Slide -->
+              <div class="carousel-item">
+                <section class="d-flex flex-nowrap">
+                  <!-- Card 1-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv11.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 1 End -->
+                  <!-- Card 2-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv12.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 End -->
+                  <!-- Card 3-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv13.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 End -->
+                  <!-- Card 4-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv14.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 End -->
+                  <!-- Card 5-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv15.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 5 End -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!-- Slider 1 FINISH -->
+      <!-- Slider 2 -->
+      <div class="slider-box slider2">
+        <div class="cotainer-fluid slider">
+          <div
+            class="d-flex justify-content-between align-items-center mb-3 px-3 my-4"
+          >
+            <p class="text-white fs-3 m-0"><b>Trending</b></p>
+            <div class="d-flex gap-2 carousel-indicator-custom">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active btn btn-light btn-sm carousel-btn"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                class="btn btn-light btn-sm carousel-btn"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                class="btn btn-light btn-sm carousel-btn"
+              ></button>
+            </div>
+          </div>
+          <!--  -->
+          <div id="carouselExampleIndicators" class="carousel slide slide1">
+            <div class="carousel-inner">
+              <!-- 1st Slide -->
+              <div class="carousel-item active">
+                <section class="d-flex flex-nowrap">
+                  <!-- Card 1-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv1.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 1 End -->
+                  <!-- Card 2-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv2.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2End -->
+                  <!-- Card 3-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv3.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 End -->
+                  <!-- Card 4 -->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv4.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 End -->
+                  <!-- Card 5 -->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv5.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card  5End -->
+                </section>
+              </div>
+
+              <!-- 2st Slide -->
+              <div class="carousel-item">
+                <section class="d-flex flex-nowrap">
+                  <!-- Card 1 -->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv6.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 1 End -->
+                  <!-- Card 2-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv7.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 End -->
+                  <!-- Card 3-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv8.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 End -->
+                  <!-- Card 4-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv9.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 End -->
+                  <!-- Card 5-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv10.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 5 End -->
+                </section>
+              </div>
+              <!-- 3st Slide -->
+              <div class="carousel-item">
+                <section class="d-flex flex-nowrap">
+                  <!-- Card 1-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv11.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 1 End -->
+                  <!-- Card 2-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv12.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 End -->
+                  <!-- Card 3-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv13.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 End -->
+                  <!-- Card 4-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv14.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 End -->
+                  <!-- Card 5-->
+                  <div class="card bg-dark text-light">
+                    <img
+                      src="./src/img/slider/trending-mv15.jpg"
+                      class="card-img-top"
+                      alt="trending-movie"
+                    />
+                    <div class="card-body">
+                      <div class="card-body-top d-flex justify-content-between">
+                        <!-- top left -->
+                        <div class="d-flex align-items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-plus-circle card-icon"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                            />
+                          </svg>
+                        </div>
+                        <!-- top right -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-arrow-down-circle card-icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="card-body-bottom my-3">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-success fs-6 fw-semibold">97% match</p>
+                          <p>Limited Series</p>
+                          <p class="text-white border p-1 d-inline">HD</p>
+                        </div>
+                        <p>Action &#x2022;Thriller</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 5 End -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!-- Slider 2 FINISH -->
+    </section>
     <!-- VIDEO CONTENT FINISH -->
     <!-- FOOTER -->
     <!-- FOOTER FINISH -->
