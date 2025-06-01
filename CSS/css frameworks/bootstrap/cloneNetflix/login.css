@@ -33,7 +33,7 @@ body {
   background-size: auto;
 }
 .section-login-page div .img-logo {
-  width: clamp(90px, 15vw, 160px);
+  width: clamp(90px, 15vw, 100px);
 }
 
 .box-login-form {
@@ -111,6 +111,7 @@ body {
   background-color: transparent;
   border: 2px solid #ccc;
   height: 1rem;
+  width: 1rem;
   border-radius: 0.1rem;
   cursor: pointer;
 }
@@ -138,7 +139,7 @@ footer {
   color: #a6a6a6;
 }
 footer a {
-  color: #a6a6a6;
+  color: #666666;
 }
 footer a:hover {
   color: gray;
@@ -153,9 +154,12 @@ footer .link-tel {
   text-decoration: none;
 }
 
+/******************/
+/*RESPONSIVE*/
 @media (max-width: 557px) {
   .section-login-page {
     background: #000 !important;
     background-image: none !important;
   }
-}/*# sourceMappingURL=style-login.css.map */
+}
+/******************//*# sourceMappingURL=login.css.map */
