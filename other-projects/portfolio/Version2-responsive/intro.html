@@ -28,10 +28,14 @@
             >
           </li>
           <li>
-            <a href="#" class="navigation-list-item list-item-two">skills</a>
+            <a href="#skills" class="navigation-list-item list-item-two"
+              >skills</a
+            >
           </li>
           <li>
-            <a href="#" class="navigation-list-item list-item-three">contact</a>
+            <a href="#contacts" class="navigation-list-item list-item-three"
+              >contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -45,20 +49,18 @@
           <!-- Add this line(42 menu-list-box) to give a flex property to menu-list , beacause of it's position propery it is not posible -->
           <ul class="menu-list">
             <li><a href="#" class="menu-list-item">intro</a></li>
-            <li><a href="#" class="menu-list-item">skills</a></li>
+            <li><a href="#skills" class="menu-list-item">skills</a></li>
             <li><a href="#projects" class="menu-list-item">projects</a></li>
-            <li><a href="#" class="menu-list-item">contact</a></li>
+            <li><a href="#contacts" class="menu-list-item">contact</a></li>
           </ul>
         </div>
       </menu>
     </header>
     <main class="section-main">
       <section class="section-hero grid gird-2--coloumns">
-        <div>
-          <p class="hero-text-current-status">
-            Available for exciting collaborations and projects
-          </p>
-        </div>
+        <p class="hero-text-current-status">
+          Available for exciting collaborations and projects
+        </p>
 
         <p class="hero-text-job frontend-position">
           <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span
@@ -76,31 +78,34 @@
         WHO &lt;<span class="font-none-serif">AM</span>&gt; I?
       </h1>
 
-      <div class="box-width--60-percent center bottom-border">
-        <div class="box-width--70-percent grid grid-3--coloumns grid-gap--cols">
+      <div class="center bottom-border">
+        <div
+          class="box-width--70-percent grid grid-3--coloumns grid-gap box-grid-one-column"
+        >
+          <!-- FIXME: dictation of colums for class -->
           <!-- box-width--50-percent" -->
           <p class="par-about-me box-width--30-percent">
             Frontend development wasn’t love at first sight — more like
-            frustration at first bug. But there was something satisfying about
-            breaking things and then figuring out why they broke.
+            frustration at first bug. But there was something oddly satisfying
+            about breaking things and figuring out why they broke.
           </p>
 
           <p class="par-about-me box-width--30-percent">
-            Now, it’s all about crafting smooth interfaces, arguing with CSS,
-            negotiating with JavaScript. Code gets messy, the browser throws a
-            fit, and somehow it all comes together.
+            These days, it’s about crafting smooth interfaces, wrestling with
+            CSS, and negotiating with JavaScript. The code gets messy, the
+            browser throws a fit, and somehow it all still works.
           </p>
           <p class="par-about-me box-width--30-percent">
-            There’s no long résumé or grand origin story here — just a lot of
-            late nights, lots of tabs open, and a weird enjoyment of figuring
-            things out the hard way. And yes, the struggle is part of the fun.
+            No epic backstory here — just late nights, too many tabs, and a
+            stubborn love for figuring things out the hard way. The struggle?
+            Still part of the fun.
           </p>
         </div>
       </div>
     </section>
     <section
       id="projects"
-      class="projects-section grid grid-2--columns container"
+      class="section-projects grid grid-2--columns container"
     >
       <ul class="project-nav">
         <li data-project="0" class="project-link active">Portfolio Website</li>
@@ -110,44 +115,155 @@
 
       <div class="project-details">
         <div class="project-content active" data-id="0">
-          <img
-            src="./assets/portfolio-website.png"
-            alt="Portfolio preview"
-            class="project-content-img"
-          />
-          <p>
-            <strong>Description:</strong> My personal portfolio built with HTML,
-            CSS & JS.
-          </p>
-          <p>
-            <strong>Process:</strong> I learned to structure semantic HTML, use
-            IntersectionObserver for animations, and manage responsive layouts.
-          </p>
-          <p><a href="#">Live Demo</a> | <a href="#">GitHub</a></p>
+          <div class="d-flex">
+            <img
+              src="./assets/portfolio/portfolio-mockup.png"
+              alt="Portfolio preview"
+              class="project-content-img"
+            />
+            <div>
+              <p>
+                <strong>Personal Portfolio</strong>
+              </p>
+              <p>
+                No Bootstrap, no libraries — just raw CSS and JavaScript. Built
+                this from the ground up to showcase projects, personality, and a
+                bit of stubbornness about doing things the hard way. Fully
+                responsive and built to grow with me.
+              </p>
+              <!-- <p><a href="#">Live Demo</a> | <a href="#">GitHub</a></p> -->
+            </div>
+          </div>
         </div>
 
         <div class="project-content" data-id="1">
-          <img
-            src="./assets/weather-app.png"
-            alt="Portfolio preview"
-            class="project-content-img"
-          />
-          <p>
-            <strong>Description:</strong> A weather app using OpenWeather API.
-          </p>
-          <p>
-            <strong>Process:</strong> I learned how to fetch and render API
-            data, handle loading states, and display error messages.
-          </p>
+          <div class="d-flex">
+            <img
+              src="./assets/netflix-clone/netflix-login.png"
+              alt="netflix preview"
+              class="project-content-img"
+            />
+            <div>
+              <p>
+                <strong>Netflix Login Page Clone</strong>
+              </p>
+              <p>
+                Recreated the Netflix login screen using Bootstrap and Sass,
+                pixel-pushing every detail to match the original. Fully
+                responsive, mobile-ready, and styled to feel familiar. No
+                streaming here — just clean, scalable frontend.
+              </p>
+              <p><a href="#">Live Demo</a> | <a href="#">GitHub</a></p>
+            </div>
+          </div>
         </div>
 
         <div class="project-content" data-id="2">
-          <p class="project-content-text">
-            Coming soon. New projects are in progress...
-          </p>
+          <div class="d-flex">
+            <img
+              src="./assets/coming-soon/coming -soon-mockup.png"
+              alt="Portfolio preview"
+              class="project-content-img"
+            />
+            <p class="project-content-text">
+              Coming soon. New projects are in progress...
+            </p>
+          </div>
         </div>
       </div>
     </section>
+    <section id="skills" class="container box-tech-stack">
+      <p class="text-teck-stack-center">My tech Stacks</p>
+      <ul>
+        <li class="stack-html stack-icon">
+          <img
+            src="./assets/techStack/html5-black.svg"
+            alt="html-logo"
+            class="img-tech-stack"
+          />
+        </li>
+        <li class="stack-css stack-icon">
+          <img
+            src="./assets/techStack/css-3 black.svg"
+            alt="css-logo"
+            class="img-tech-stack"
+          />
+        </li>
+        <li class="stack-sass stack-icon">
+          <img
+            src="./assets/techStack/sass.svg"
+            alt="sass-logo"
+            class="img-tech-stack"
+          />
+        </li>
+        <li class="stack-js stack-icon">
+          <img
+            src="./assets/techStack/js-black.png"
+            alt="javascript-logo"
+            class="img-tech-stack"
+          />
+        </li>
+        <li class="stack-figma stack-icon">
+          <img
+            src="./assets/techStack/figma-logo-black.svg"
+            alt="figma-logo"
+            class="img-tech-stack"
+          />
+        </li>
+        <li class="stack-bootstrap stack-icon">
+          <img
+            src="./assets/techStack/bootstrap-black.png"
+            alt="bootstrap-logo"
+            class="img-tech-stack"
+          />
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <section id="contacts" class="section-contacts">
+        <div class="contacts-box">
+          <p class="text-contacts">
+            Got a project, a bug, or a half-baked side project
+            <span class="larger color-green">Get in touch.</span>
+          </p>
+          <div class="contacts-info">
+            <a
+              href="https://www.linkedin.com/in/faezeh-shabannejad/overlay/contact-info/"
+              class="linkedin contact"
+              >Linkdin</a
+            >
+            <a href="mailto:faezeh.shabannejad@gmail.com" class="gmail contact"
+              >Gmail</a
+            >
+            <p
+              href="mailto:faezeh.shabannejad@gmail.com"
+              class="contact gmail-address"
+            >
+              faezeh.shabannejad@gmail.com
+            </p>
+            <a href="tel:098991070847" class="tel contact">TEl</a>
+            <p href="tel:0989104539397" class="contact tel-number">
+              098-9104539397
+            </p>
+          </div>
+        </div>
+        <div class="contacts-scroll-box">
+          <div class="scrolle-inner">
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+            <!-- Duplicate -->
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+            <p class="scroll-box-message">Let's Talk</p>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

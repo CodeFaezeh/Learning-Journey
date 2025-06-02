@@ -33,23 +33,22 @@ a {
 .grid-3--coloumns {
   grid-template-columns: repeat(3, 1fr);
 }
-.grid-gap--cols {
+.grid-gap {
   column-gap: 2.4rem;
+  row-gap: 2.4rem;
 }
 .center {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .flex-cols {
   flex-direction: column;
 }
-.box-width--60-percent {
-  width: 60%;
-  justify-content: flex-end;
-}
 .box-width--70-percent {
   width: 70%;
+}
+.box-width--30-percent {
+  width: 30rem;
 }
 
 /***************/
@@ -85,7 +84,7 @@ header {
 .navigation-box-desktop {
   align-self: baseline;
   margin-top: 3.6rem;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 .navigation-list {
   display: flex;
@@ -130,7 +129,7 @@ header {
   justify-content: center;
 }
 .list-item-zero {
-  text-decoration: line-through rgb(255, 0, 0);
+  text-decoration: line-through #c1545b;
 } /*current page*/
 .list-item-zero::after {
   content: "0";
@@ -176,10 +175,9 @@ header {
   top: 100%; /* right below the header */
   right: 0;
   width: 100vw;
-  background-color: #f9f5f2;
-  box-shadow: 0 10px 0 #000;
   z-index: 999;
   padding: 2rem;
+  background-color: #000000de;
 }
 /* FIXME: when i open the menu the header push*/
 /*SOLVED: by positioning absolute*/
@@ -195,6 +193,7 @@ header {
 }
 .menu-list-item {
   font-size: 3.2rem;
+  color: #f9f5f2;
 }
 .menu-list-item:active {
   color: #888;
@@ -208,7 +207,6 @@ main {
 }
 .section-hero {
   max-width: 80%;
-  max-height: 80vh;
   padding-top: 10rem;
   margin-top: 15rem;
 }
@@ -242,9 +240,9 @@ main {
 /* Section Intro */
 .section-about-me {
   width: 100%;
-  height: 100vh;
   gap: 12rem;
-  margin-top: 12rem;
+  margin-top: 24rem;
+  margin-bottom: 16rem;
 }
 h1 {
   font-size: 12rem;
@@ -278,20 +276,25 @@ h1 .font-none-serif {
   bottom: -3.2rem;
   background-color: #000;
 }
+/**********/
+/*About Me*/
+/**********/
 .par-about-me {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   line-height: 1.3;
   font-weight: 500;
+  margin-right: 2.4rem;
 }
 /***************/
 /***************/
 /* Section PROJECTS */
-.projects-section {
-  height: 100vh;
+.section-projects {
   display: grid;
-  grid-template-columns: 30% 1fr;
+  max-height: 90vh;
+  grid-template-columns: 20% 1fr;
   gap: 2rem;
-  margin-top: 8rem;
+  margin-top: 4.2rem;
+  margin-bottom: 24rem;
 }
 .project-nav {
   display: flex;
@@ -306,25 +309,41 @@ h1 .font-none-serif {
 }
 .project-link.active {
   text-decoration: line-through;
-  color: rgb(255, 0, 0);
+  color: #c1545b;
 }
 .project-details {
   position: relative;
   width: 90%;
 }
+.d-flex {
+  display: flex;
+  gap: 1.2rem;
+}
 .project-content {
   display: none;
   animation: fade 0.4s ease-in;
+}
+.project-content p {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+.project-content a {
+  color: #000;
+  transition: all ease-out 0.3s;
+}
+.project-content a:hover {
+  color: #888;
+  text-decoration: underline 0.1rem;
 }
 .project-content.active {
   display: block;
 }
 .project-content-img {
-  width: 50%;
-  height: 10vw;
+  width: 70%;
+  height: 70vh;
   object-position: center;
   object-fit: cover;
-  border: #000 solid 0.5rem;
+  border-radius: 1.6rem;
 }
 
 .project-content-text {
@@ -341,3 +360,155 @@ h1 .font-none-serif {
   }
 }
 /***************/
+/*SECTION SKIILS*/
+.box-tech-stack {
+  position: relative;
+  margin-bottom: 20rem;
+}
+.text-teck-stack-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 3.2rem;
+}
+
+.box-tech-stack:hover .stack-icon {
+  transform: scale(1.2);
+}
+.stack-icon {
+  position: absolute;
+  transition: all 0.5s ease;
+}
+/*positioning stacks manually around the center*/
+.stack-html {
+  top: 50%;
+  /* left: 50rem; scroll up to this distance*/
+  left: 38%;
+  transform: translateY(-50%);
+}
+.stack-css {
+  /* bottom: 10rem; */
+  bottom: 6rem;
+  left: 40%;
+}
+.stack-sass {
+  /* bottom: 10rem; */
+  bottom: 8rem;
+  right: 40%;
+  filter: brightness(0.5);
+}
+.stack-js {
+  top: 50%;
+  /* right: 50rem; */
+  right: 38%;
+  transform: translateY(-50%);
+}
+.stack-bootstrap {
+  /* top: 10rem; */
+  top: 6rem;
+  left: 40%;
+}
+.stack-figma {
+  /* top: 10rem; */
+  top: 6rem;
+  right: 40%;
+}
+/***finish manually positioning tech stacks*****/
+.img-tech-stack {
+  width: 7rem;
+  height: 7rem;
+}
+/***************/
+/*SECTION : CONTACTS*/
+.section-contacts {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.contacts-box {
+  min-width: 80%;
+  min-height: 30%;
+  background-color: #fff;
+  border: solid 3px #000;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rem;
+}
+.text-contacts {
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border-right: solid 3px #000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-wrap: nowrap;
+  height: 100%;
+  align-self: flex-start;
+}
+.larger {
+  font-size: 7rem;
+  color: #000;
+}
+.contacts-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 1rem 2rem;
+  row-gap: 1.6rem;
+}
+.contact {
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 600;
+}
+.gmail {
+  grid-column: 1;
+  grid-row: 2;
+}
+.gmail-address {
+  grid-column: 2;
+  grid-row: 2;
+  cursor: text;
+}
+.tel {
+  grid-column: 1;
+  grid-row: 3;
+}
+.tel-number {
+  grid-column: 2;
+  grid-row: 3;
+  cursor: text;
+}
+.contacts-scroll-box {
+  max-width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+.scrolle-inner {
+  background-color: #000;
+  color: #f9f5f2;
+  display: flex;
+  gap: 20rem;
+  animation: scroll 30s infinite linear;
+}
+.scroll-box-message {
+  font-size: 12.5rem;
+  line-height: 12rem;
+  white-space: nowrap;
+}
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 20rem));
+  }
+}

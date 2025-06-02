@@ -3,6 +3,7 @@
 /* MAX-WIDTH = 1340 PX = 83.75 EM  DESKTOP*/
 @media (max-width: 83.75em) {
   html {
+    /*  9px in 16rem */
     font-size: 56.25%;
   }
 }
@@ -84,35 +85,6 @@ menu {
     top: 50%;
     right: 10%;
   }
-  main {
-    display: flex;
-    justify-content: center;
-  }
-  .gird-2--coloumns {
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-  } /*hero grid : for resetting the grid view to 1 cols*/
-  .hero-text-current-status {
-    width: 30%;
-    text-align: center;
-    justify-self: flex-end;
-    font-size: 2.4rem;
-    justify-self: center;
-    align-self: center;
-    transform: translateX(0);
-    grid-row: 3/-3;
-  }
-  .hero-text-job {
-    text-align: center;
-    font-size: 24rem;
-  }
-  .frontend-position {
-    transform: translateX(0);
-  }
-  .developer-position {
-    grid-column: 1;
-  }
 }
 /***************/
 /***************/
@@ -128,6 +100,11 @@ menu {
   .hero-text-job {
     font-size: 24rem;
   }
+  /* Section Projects */
+  .project-content-img {
+    width: 60%;
+    height: 60vh;
+  }
 }
 /***************/
 /* MAX-WIDTH = 910 PX = 56.875 EM */
@@ -141,6 +118,10 @@ menu {
   .hero-text-job {
     font-size: 26rem;
   }
+  /* Section Projects */
+  .project-content-img {
+    height: 50vh;
+  }
 }
 /***************/
 /***************/
@@ -151,10 +132,14 @@ menu {
   }
   .hero-text-current-status {
     font-size: 3.5rem;
-    width: 40%;
+    width: 70%;
   }
   .hero-text-job {
     font-size: 25rem;
+  }
+  /* Section Projects */
+  .project-content-img {
+    height: 35vh;
   }
 }
 /***************/
@@ -165,10 +150,33 @@ menu {
   }
   .hero-text-current-status {
     font-size: 15%;
-    width: 50%;
   }
   .hero-text-job {
     font-size: 90%;
+  }
+  /* Section Projects */
+  .project-content-img {
+    height: 30vh;
+  }
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 534 PX = 33.375 EM */
+@media (max-width: 33.375em) {
+  html {
+    font-size: 25%;
+  }
+}
+/***************/
+/***************/
+/* MAX-WIDTH = 446 PX = 27.875 EM */
+@media (max-width: 27.875em) {
+  html {
+    font-size: 20%;
+  }
+  /* Section Projects */
+  .project-content-img {
+    height: 20vh;
   }
 }
 /***************/
