@@ -1,3 +1,13 @@
+// header
+const headerFrontendDev = document.querySelector(".header-text-job");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 1000) {
+    headerFrontendDev.style.visibility = "hidden";
+  } else {
+    headerFrontendDev.style.visibility = "visible"; // in case you want it back
+  }
+});
 // h1 animation
 const h1 = document.querySelector("h1");
 
@@ -50,7 +60,7 @@ window.addEventListener("scroll", () => {
   // Progress from 0 (top of screen) to 1 (fully scrolled through section)
   let progress = 1 - Math.min(Math.max(sectionTop / window.innerHeight, 0), 1);
 
-  const move = progress * 200;
+  let move = window.innerWidth < 557 ? progress * 80 : progress * 200;
 
   // Move icons AWAY when scrolling down, BACK when scrolling up
   html.style.left = `calc(38% - ${move}px)`;

@@ -146,36 +146,82 @@ menu {
 /* MAX-WIDTH = 600 PX = 37.5 EM */
 @media (max-width: 37.5em) {
   html {
-    font-size: 31.25%;
+    font-size: 56.25%;
   }
-  .hero-text-current-status {
-    font-size: 15%;
-  }
+  /**********/
+  /* section hero */
   .hero-text-job {
     font-size: 90%;
   }
-  /* Section Projects */
-  .project-content-img {
-    height: 30vh;
+  .hero-text-current-status {
+    font-size: 15%;
+    margin-right: auto;
+    width: 90%;
+    transform: translateX(0);
   }
+  .frontend-position {
+    transform: translateX(0);
+  }
+
+  /**********/
+  /**********/
+  /* Section about me */
+  .section-about-me {
+    margin-bottom: auto;
+  }
+  .mg-top {
+    margin-top: 4.2rem;
+  }
+  .grid--rows {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .grid-3--coloumns {
+    grid-template-columns: 1fr;
+  }
+  .box-width--70-percent {
+    width: 100%;
+  }
+  .box-width--30-percent {
+    width: 100%;
+  }
+  /* Section about me : finish*/
+  /**********/
+  /* Section Projects */
+  .box-project-d-flex {
+    display: flex;
+    gap: 3.2rem;
+    flex-direction: column;
+  }
+  .project-content-img {
+    height: 60vh;
+    width: 60vw;
+  }
+  /*********/
+  /*section Footer*/
+  .text-contacts {
+    border-right: none;
+  }
+  .contacts-box {
+    width: clamp(20%, 25vw, 300px);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-contacts,
+  .contact {
+    font-size: 1.6rem;
+  }
+  /*********/
 }
 /***************/
 /***************/
 /* MAX-WIDTH = 534 PX = 33.375 EM */
 @media (max-width: 33.375em) {
-  html {
-    font-size: 25%;
-  }
 }
 /***************/
 /***************/
 /* MAX-WIDTH = 446 PX = 27.875 EM */
 @media (max-width: 27.875em) {
-  html {
-    font-size: 20%;
-  }
-  /* Section Projects */
-  .project-content-img {
+  Section Projects .project-content-img {
     height: 20vh;
   }
 }
