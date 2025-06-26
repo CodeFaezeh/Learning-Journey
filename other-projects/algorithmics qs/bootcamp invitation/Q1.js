@@ -1,9 +1,19 @@
 "use stric";
 // let longestSubString = function (str) {
-//   str = str.toLowerCase();
-//   console.log(str);
+//   const words = str.toLowerCase().split("");
+//   console.log(words);
+//   const iterateTimeWord = new Map();
+//   const result = [];
+//   for (const [wordind, word] of words.entries()) {
+//     console.log(wordind, word);
+//     if (!iterateTimeWord.get(word)) {
+//       iterateTimeWord.set(word, wordind);
+//     } else {
+//     }
+//   }
+//   console.log(iterateTimeWord);
 // };
-// // detecSubString("abcabcbb");
+// longestSubString("abcabcbb");
 // detecSubString("aBciiiDef");
 
 ////Q1:easy
@@ -107,6 +117,7 @@ removeDuplicates(["1", "1", "3"]);
 removeDuplicates([1, 1, 2]);
 */
 ///Q:med , add two numbers
+/*
 let addTwoNumbers = function (l1, l2) {
   // first:equall length of arrays
   n = Math.max(l1.length, l2.length);
@@ -124,19 +135,19 @@ let addTwoNumbers = function (l1, l2) {
   }
   // second: add each number of array to each other
   let l3 = [];
-  let carry = [0];
+  let carry = 0;
   l1.forEach((digit, index) => {
-    let sum = digit + l2[index] + carry[index];
+    let sum = digit + l2[index] + carry;
     // l3[index]
     if (sum >= 10) {
       l3[index] = sum - 10;
-      carry.push(1);
+      carry = 1;
       if (l3.length === n) {
         l3.push(1);
       }
     } else {
       l3[index] = sum;
-      carry.push(0);
+      carry = 0;
     }
   });
   // console.log(arr1, arr2);
@@ -152,7 +163,32 @@ let addTwoNumbers = function (l1, l2) {
 //16
 // arr1 = [5];
 // arr2 = [6, 1];
-arr1 = [8];
-arr2 = [2];
+// arr1 = [8];
+// arr2 = [2];
 
 addTwoNumbers(arr1, arr2);
+*/
+///////
+// Q:example frequency counters
+function same(arr1, arr2) {
+  // check if we have the same size frequnt of element
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+  // check elements one by one
+  for (const el1 of arr1) {
+    for (let i = 0; i < arr2.length; i++) {
+      let found = false;
+      if (el1 ** 2 === arr2[i]) {
+        arr2[i] = null; //mark this element as used
+        found = true;
+        break; // move to next el1
+      }
+    }
+    if (found === false) {
+      return false;
+    }
+  }
+  return true;
+}
