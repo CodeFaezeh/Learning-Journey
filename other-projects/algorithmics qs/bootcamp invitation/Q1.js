@@ -170,6 +170,8 @@ addTwoNumbers(arr1, arr2);
 */
 ///////
 // Q:example frequency counters
+// A:1
+/*
 function same(arr1, arr2) {
   // check if we have the same size frequnt of element
   if (arr1.length !== arr2.length) {
@@ -178,8 +180,8 @@ function same(arr1, arr2) {
 
   // check elements one by one
   for (const el1 of arr1) {
+    let found = false; //if element in array 1 has match or not
     for (let i = 0; i < arr2.length; i++) {
-      let found = false;
       if (el1 ** 2 === arr2[i]) {
         arr2[i] = null; //mark this element as used
         found = true;
@@ -192,3 +194,42 @@ function same(arr1, arr2) {
   }
   return true;
 }
+  */
+// A:2
+/*
+function same(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (const val1 of arr1) {
+    let currentValue = arr2.indexOf(val1 ** 2);
+    if (currentValue === -1) {
+      return false;
+    }
+    arr2.splice(currentValue, 1);
+  }
+  return true;
+}
+  */
+// A:3
+function same(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (const el1 of arr1) {
+    let found = false;
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr2[i] === el1 ** 2) {
+        found = true;
+        arr2[i] = null;
+        break;
+      }
+    }
+    if (!found) {
+      return false;
+    }
+  }
+  return true;
+}
+// console.log(same([1, 2, 3], [4, 1, 9]));
+console.log(same([1, 2, 3, 2], [4, 1, 9, 4]));
