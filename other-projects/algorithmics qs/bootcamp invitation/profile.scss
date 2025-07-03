@@ -1,3 +1,4 @@
+// :::UNIVERSAL:::
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +11,31 @@ i {
   cursor: pointer;
 }
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   font-family: "Outfit";
   font-weight: 500;
   line-height: 1;
 }
-//body
+// ::::::VARIABLES::::::
+/* :::COLORS:::*/
+$grey-box-shadow: rgba(226, 236, 249, 0.5);
+$grey-100: #e6e8ec;
+$grey-light: #cecece; // for borders & dividers
+$grey-dark: #9197b3; //for texts
+$white: #ffffff;
+
+// :::DEFAULTS:::
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.flex-dir-col {
+  flex-direction: column;
+}
+.d-grid {
+  display: grid;
+}
+//::BODY LAYOUT
 body {
   height: 100vh;
 }
@@ -24,22 +44,22 @@ body {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 6fr;
 }
-//header
+//:::Header:::for placing logo
 .section-logo {
   padding-left: 2.7rem;
-  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  box-shadow: 0px 10px 60px 0px $grey-box-shadow;
   gap: 2rem;
   h1 {
     font-weight: 400;
     font-size: 2.6rem;
   }
 }
-//info
+//:::Info Section:::for placing user info badge
 .section-info {
   flex-direction: row-reverse;
   gap: 0.5vw;
   padding-right: 5rem;
-  border-bottom: #cecece solid 1px;
+  border-bottom: $grey-light solid 1px;
   .icon-box {
     width: 4.2rem;
     svg {
@@ -59,7 +79,7 @@ body {
   border: #e8eff7 solid 0.115rem;
   border-radius: 0.921rem;
   width: 26%;
-  height: 60%;
+  height: 80%;
   gap: 0.8rem;
   padding: 1.2rem 1rem;
   .img-user {
@@ -85,16 +105,13 @@ body {
     margin-left: auto;
   }
 }
-
-// Dashboard
-.d-flex {
-  display: flex;
-  align-items: center;
-}
+// :::Dashboard Section:::for placing dashboard items
 .section-dashboard {
-  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  box-shadow: 0px 10px 60px 0px $grey-box-shadow;
+  min-height: 100vh;
 }
 .dashboard-items {
+  min-height: 100%;
   padding-left: 3.9rem;
   padding-right: 3.6rem;
   padding-top: 6.4rem;
@@ -110,23 +127,24 @@ a {
 }
 .dashboard-icon {
   width: 1.5vw;
-  color: #9197b3;
+  color: $grey-dark;
 }
 .svg-chevron-right {
   width: 1vw;
   stroke-width: 2px;
 }
 .dashboard-items-label {
-  color: #9197b3;
+  color: $grey-dark;
   font-weight: 500;
   font-size: 1.6rem;
 }
-// main
+//:::Main:::for placing resume
 main {
   position: relative;
   padding-top: 2.4rem;
+  height: 100vh;
 }
-
+//-1-Header in main as sticker
 .portfolio-sticker {
   background-color: #1877f2;
   width: 83%;
@@ -134,22 +152,22 @@ main {
   border-radius: 1rem;
   justify-content: space-between;
   //reset align-items beacause of d-flex defalut
-  align-items: baseline;
+  align-items: flex-start;
   padding: 1.6rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  a {
-    color: #ffffff;
+  .sticker-text {
+    color: $white;
     font-size: 1.2rem;
-    &:last-child {
-      background-color: #ffffff4d;
-      padding: 6px 1.8rem;
-      border-radius: 5px;
-    }
+  }
+  .bg-white-op {
+    background-color: rgba($white, 0.3);
+    padding: 6px 1.8rem;
+    border-radius: 5px;
   }
 }
-// cards portfolio
+//::::1-2-Section Cards::::
 .section-card-portfolio {
   width: 100%;
   height: 100%;
@@ -163,17 +181,23 @@ main {
   left: 50%;
   transform: translate(-50%);
 }
-// card portfolio-info
+// ::Card primary1 &&& Card Secondary2::
 .card-primary-info,
 .card-secondary-info {
-  height: 80vh;
+  height: 50rem;
   border-radius: 8px;
-  background-color: #00056080;
+  background-color: $white;
+  box-shadow: 0px 12px 56px 0px rgba(6, 28, 61, 0.12);
+  padding: 3.2rem 2.4rem;
 }
+//: Card primary1
 .card-primary-info {
   width: 40%;
-  header {
+  .header-card-primary {
     justify-content: center;
+    gap: 2.4rem;
+    border-bottom: solid 1px $grey-100;
+    padding-bottom: 2.4rem;
     p {
       flex-direction: column;
     }
@@ -183,6 +207,105 @@ main {
   width: 30%;
   border-radius: 50%;
 }
+.card-userName {
+  flex-direction: column;
+  gap: 8px;
+  .card-userName {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .card-userRole {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
+.card-box-socialMedias {
+  padding: 2.4rem 0;
+  gap: 1.2rem;
+  width: 100%;
+  .socialMedias {
+    width: 12%;
+  }
+}
+.card-box-introduction {
+  align-items: flex-start;
+  gap: 1.6rem;
+  border: solid 1px rgba(black, 0.15);
+  border-radius: 5px;
+  padding: 1.8rem;
+  .intro-title,
+  .intro {
+    color: #1f1f1fb2;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .intro {
+    color: rgba(34, 34, 34, 0.9);
+    margin-top: 9px;
+  }
+}
+// ::Card Seconday : section user experinces fileds::
 .card-secondary-info {
   width: 30%;
+  gap: 2.4rem;
+  align-items: flex-start;
+}
+.title-box-info {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgba(34, 34, 34, 0.9);
+  margin-bottom: 1.6rem;
+}
+.innerBox-userExpertise {
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.box-expert {
+  width: fit-content;
+  border: solid 1px $grey-light;
+  border-radius: 3rem;
+  padding: 6px 1rem;
+  color: #49454fcc;
+  font-size: 1.4rem;
+  font-weight: 400;
+  gap: 5px;
+}
+//:Secondary card:section user years of work and customer rates:
+.section-box-userYearAndRate {
+  width: 100%;
+}
+.box-expertInfoNum {
+  width: 100%;
+  height: 5.3rem;
+  justify-content: space-between;
+  border: solid 1px rgba(black, 0.15);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+}
+.innerBox-subtitleAndIntro {
+  padding: 1rem 1.3rem;
+  padding-right: 0;
+}
+.subtitle-info {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #222222e5;
+  margin-bottom: 3px;
+}
+.intor-subtitle {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #49454fcc;
+}
+.bg-icon {
+  height: 100%;
+  width: 21%;
+  justify-content: center;
+}
+.bg-pink {
+  background-color: #ffa78d;
+}
+.bg-yellow {
+  background-color: #ffcb00b2;
 }

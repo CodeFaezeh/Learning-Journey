@@ -13,10 +13,13 @@
     <title>Profile Sample</title>
   </head>
   <body class="body-d-grid">
+    <!-- :::Header:::for placing logo -->
     <header class="section-logo d-flex">
       <img src="./img/logo.png" alt="sample logo in yellow" />
       <h1>Sample</h1>
     </header>
+    <!-- FINISH Header -->
+    <!-- :::Info Section:::for placing user info badge -->
     <section class="section-info d-flex">
       <div class="info-box d-flex">
         <img src="./img/avatarImg.jpg" alt="user picture" class="img-user" />
@@ -40,7 +43,7 @@
           </svg>
         </i>
       </div>
-      <i class="icon-box"
+      <i class="icon-box" title="Notifications"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -56,11 +59,13 @@
         </svg>
       </i>
     </section>
+    <!-- FINISH Info -->
+    <!-- :::Dashboard Section:::for placing dashboard items -->
     <section class="section-dashboard">
       <div class="dashboard-items">
-        <a href="#" class="d-flex"
-          ><div class="d-flex item-inner-box"
-            ><i
+        <a href="#" title="Chat" class="d-flex"
+          ><div class="d-flex item-inner-box">
+            <i
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,8 +81,10 @@
                 />
               </svg>
             </i>
-            <h3 class="dashboard-items-label">Chat</h3></div>
-          <i><svg
+            <h3 class="dashboard-items-label">Chat</h3>
+          </div>
+          <i
+            ><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -92,9 +99,9 @@
               />
             </svg> </i
         ></a>
-        <a  href="#" class="d-flex">
-          <div class="d-flex item-inner-box"
-            ><i
+        <a href="#" title="Call" class="d-flex">
+          <div class="d-flex item-inner-box">
+            <i
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -128,7 +135,7 @@
               />
             </svg> </i
         ></a>
-        <a href="#" class="d-flex">
+        <a href="#" title="Questions" class="d-flex">
           <div class="d-flex item-inner-box">
             <i
               ><svg
@@ -167,32 +174,149 @@
         </a>
       </div>
     </section>
+    <!-- FINISH Dashboard -->
+    <!-- :::Main:::for placing resume -->
     <main>
+      <!-- -1-Header in main as sticker -->
       <section class="portfolio-sticker d-flex">
-        <a href="#">MY PROFILE</a>
-        <a href="#" >My Data</a>
-      <section class="section-card-portfolio d-flex">
-        <section class="card-primary-info ">
-          <div class="inner-box">
-          <header class="d-flex">
-            <img src="./img/avatarImg.jpg" alt="3D cartoon character with dark curly hair, large round ears, and a purple and yellow striped shirt, standing against a pink background, neutral expression, playful and friendly atmosphere" class="card-userImg">
-            <p class="d-flex">
-              <h2>Marvin McKinney</h2>
-              <h3 class="card-userRole">Product Designer</h3>
-            </div>
-          </header>
-        </div>
+        <a href="#" class="sticker-text">MY PROFILE</a>
+        <a href="#" class="sticker-text bg-white-op">My Data</a>
+        <!-- -1-2-Section cards in sticker (for placing by using positiong relative to sticker) -->
+        <section class="section-card-portfolio d-flex">
+          <!-- Card primary1:user personal info and intro -->
+          <section class="card-primary-info">
+            <header class="d-flex header-card-primary">
+              <img
+                src="./img/avatarImg.jpg"
+                alt="3D cartoon character with dark curly hair, large round ears, and a purple and yellow striped shirt, standing against a pink background, neutral expression, playful and friendly atmosphere"
+                class="card-userImg"
+              />
+              <div class="d-flex card-userName">
+                <h2 class="card-userName">Marvin McKinney</h2>
+                <h3 class="card-userRole">Product Designer</h3>
+              </div>
+            </header>
+            <section class="card-box-socialMedias d-flex">
+              <a href="#" title="Facebook" class="socialMedias"
+                ><img
+                  src="./img/facebookIcon.svg"
+                  alt="facebook logo in blue, f is the brand symbol"
+              /></a>
+              <a href="#" title="Instagram" class="socialMedias">
+                <img
+                  src="./img/instagramIcon.svg"
+                  alt="instagram logo in red, a camera is the brand symbol"
+              /></a>
+              <a href="#" title="twitter" class="socialMedias">
+                <img
+                  src="./img/twitterIcon.svg"
+                  alt="twitter logo in red, a blue bird is the brand symbol"
+              /></a>
+              <a href="#" title="Linkedin" class="socialMedias">
+                <img
+                  src="./img/linkedinIcon.svg"
+                  alt="linkedin logo in blue, l and i are the brand symbol"
+              /></a>
+            </section>
+            <section class="card-box-introduction d-flex flex-dir-col">
+              <div>
+                <h4 class="intro-title">Bio</h4>
+                <p class="intro">
+                  The Oregon state government website includes a breadcrumb
+                  trail, but omits a link to the homepage. However, in this case
+                  this is acceptable.
+                </p>
+              </div>
+              <div>
+                <h4 class="intro-title">Your Name</h4>
+                <p class="intro">Marvin McKinney</p>
+              </div>
+              <div>
+                <h4 class="intro-title">Email</h4>
+                <a class="intro" href="mailto:siddxd@growthx.com"
+                  >siddxd@growthx.com</a
+                >
+              </div>
+              <div>
+                <h4 class="intro-title">Phone Number</h4>
+                <a class="intro" href="tel:+91-49652845732">+91-49652845732</a>
+              </div>
+            </section>
+          </section>
+          <!-- FINISH Card primary -->
+          <!-- Card Secondary2:user personal info and intro -->
+          <section class="card-secondary-info d-flex flex-dir-col">
+            <section class="section-box-userExpertise">
+              <h3 class="title-box-info">Expertise In</h3>
+              <div class="innerBox-userExpertise d-flex">
+                <h4 class="box-expert d-flex">
+                  <img src="./img/walletMoneyAsset.svg" alt="" />User Experience
+                </h4>
+                <h4 class="box-expert d-flex">
+                  <img src="./img/linkRoundAsset.svg" alt="" />Product
+                </h4>
+                <h4 class="box-expert d-flex">
+                  <img src="./img/suitcaseAsset.svg" alt="" />User Inerface
+                </h4>
+                <h4 class="box-expert d-flex">
+                  <img src="./img/linkRoundAsset.svg" alt="" />Design
+                </h4>
+              </div>
+            </section>
+            <!-- Finish:Secondary card:section user experinces fileds -->
+            <!-- Secondary card:section user years of work and customer rates -->
+            <section class="section-box-userYearAndRate">
+              <h3 class="title-box-info">Total Experience</h3>
+              <div class="box-expertInfoNum d-flex">
+                <div class="innerBox-subtitleAndIntro">
+                  <h4 class="subtitle-info">7 Years</h4>
+                  <h5 class="intor-subtitle">of total experience</h5>
+                </div>
+                <div class="bg-icon bg-pink d-flex">
+                  <img
+                    src="./img/medalStarVector.svg"
+                    alt="medal as symbol for showing the years of user experience"
+                  />
+                </div>
+              </div>
+              <h3 class="title-box-info">Ratings</h3>
+              <div class="box-expertInfoNum d-flex">
+                <div class="innerBox-subtitleAndIntro">
+                  <h4 class="subtitle-info">4 Stars</h4>
+                  <h5 class="intor-subtitle">from 34 customers</h5>
+                </div>
+                <div class="bg-icon bg-yellow d-flex">
+                  <img
+                    src="./img/starVector.svg"
+                    alt="star as symbol for showing the rates of user projects and customer's feedbacks"
+                  />
+                </div>
+              </div>
+            </section>
+            <!-- Finish:Secondary card:section user experinces fileds -->
+            <!-- Secondary card:section noticement for app view of the resume -->
+            <section class="section-noticeAppForMoreInfo">
+              <div class="box-expertInfoNum d-flex">
+                <div class="innerBox-subtitleAndIntro">
+                  <h4 class="subtitle-info">Professional Details</h4>
+                  <p class="intor-subtitle">
+                    This are the professional details shown to users in the app.
+                  </p>
+                </div>
+                <div class="bg-icon d-flex">
+                  <img
+                    src="./img/starsblueVector.svg"
+                    alt="blue stars as symbol"
+                  />
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- FINISH Secondary card2 -->
         </section>
-        <div class="card-secondary-info">
-          <div class="card-box-userExpertise">Expertise In
-            <h4>User Experience</h4>
-            <h4>Product</h4>
-            <h4>User Inerface</h4>
-            <h4>Design</h4>
-          </div>
-        </div>
+        <!-- FINISH-1-2-Section cards in sticker-->
       </section>
-      </section>
+      <!-- FINISH-1-Header in main as sticker -->
     </main>
   </body>
 </html>
