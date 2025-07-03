@@ -211,7 +211,8 @@ function same(arr1, arr2) {
   return true;
 }
   */
-// A:3
+// A:Mine again
+/*
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -231,5 +232,24 @@ function same(arr1, arr2) {
   }
   return true;
 }
-// console.log(same([1, 2, 3], [4, 1, 9]));
+*/
+// A:1 again
+/*
+function same(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (const el1 of arr1) {
+    let currentEl2 = arr2.indexOf(el1 ** 2);
+    if (currentEl2 === -1) {
+      return false;
+    }
+    arr2.splice(currentEl2, 1);
+    return true;
+  }
+}
+  */
+// A:2 again
+function same(arr1, arr2) {}
+console.log(same([1, 2, 3], [4, 1, 9]));
 console.log(same([1, 2, 3, 2], [4, 1, 9, 4]));
