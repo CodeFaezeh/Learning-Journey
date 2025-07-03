@@ -231,6 +231,7 @@ main {
 }
 .card-box-socialMedias .socialMedias {
   width: 12%;
+  transition: all 0.3s;
 }
 
 .card-box-introduction {
@@ -307,10 +308,14 @@ main {
   margin-bottom: 3px;
 }
 
-.intor-subtitle {
+.intro-subtitle {
   font-weight: 400;
   font-size: 1.2rem;
   color: rgba(73, 69, 79, 0.8);
+}
+
+.intro-notice-lh {
+  line-height: 1.2;
 }
 
 .bg-icon {

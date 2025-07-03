@@ -225,8 +225,10 @@ main {
   width: 100%;
   .socialMedias {
     width: 12%;
+    transition: all 0.3s;
   }
 }
+
 .card-box-introduction {
   align-items: flex-start;
   gap: 1.6rem;
@@ -293,10 +295,13 @@ main {
   color: #222222e5;
   margin-bottom: 3px;
 }
-.intor-subtitle {
+.intro-subtitle {
   font-weight: 400;
   font-size: 1.2rem;
   color: #49454fcc;
+}
+.intro-notice-lh {
+  line-height: 1.2;
 }
 .bg-icon {
   height: 100%;
