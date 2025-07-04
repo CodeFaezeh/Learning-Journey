@@ -41,8 +41,8 @@ body {
 }
 .body-d-grid {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 22% 78%;
+  grid-template-rows: 15% 85%;
 }
 //:::Header:::for placing logo
 .section-logo {
@@ -76,34 +76,36 @@ body {
   }
 }
 .info-box {
-  border: #e8eff7 solid 0.115rem;
+  border: #e8eff7 solid 1.15px;
   border-radius: 0.921rem;
-  width: 26%;
-  height: 80%;
+  // width: 28%;
+  width: 28%;
+  height: 70%;
   gap: 0.8rem;
   padding: 1.2rem 1rem;
-  .img-user {
-    width: 13%;
-    border-radius: 0.8rem;
-  }
-  .par-user {
-    color: #373b5c;
-    flex-direction: column;
-    align-items: flex-start;
-    font-family: "Poppins";
-    font-weight: 500;
-    text-align: center;
-    gap: 0.8rem;
-    .user-greeting {
-      font-size: 1.2rem;
-    }
-    .user-name {
-      font-size: 2rem;
-    }
-  }
-  .chevron-d-box {
-    margin-left: auto;
-  }
+}
+.img-user {
+  width: 15%;
+  border-radius: 0.8rem;
+}
+.par-user {
+  color: #373b5c;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins";
+  font-weight: 500;
+  text-align: center;
+  gap: 0.8rem;
+}
+.user-greeting {
+  // font-size: 1.2rem;
+  font-size: clamp(0.5rem, 0.8vw, 1.2rem);
+}
+.user-name {
+  font-size: clamp(0.8rem, 1.2vw, 2rem);
+}
+.chevron-d-box {
+  margin-left: auto;
 }
 // :::Dashboard Section:::for placing dashboard items
 .section-dashboard {
@@ -114,13 +116,16 @@ body {
   min-height: 100%;
   padding-left: 3.9rem;
   padding-right: 3.6rem;
-  padding-top: 6.4rem;
+  padding-top: 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-a {
+.dashboard-eachItem {
   justify-content: space-between;
+  padding: 6px 1.8rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
   .item-inner-box {
     gap: 2rem;
   }
@@ -137,6 +142,12 @@ a {
   color: $grey-dark;
   font-weight: 500;
   font-size: 1.6rem;
+}
+/*+++ When hovered+++ */
+.dashboard-eachItem.hoverd .dashboard-icon,
+.dashboard-eachItem.hoverd .dashboard-items-label {
+  stroke: #6677c2;
+  color: #6677c2;
 }
 //:::Main:::for placing resume
 main {
@@ -211,11 +222,11 @@ main {
   flex-direction: column;
   gap: 8px;
   .card-userName {
-    font-size: 2rem;
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
     font-weight: 500;
   }
   .card-userRole {
-    font-size: 1.6rem;
+    font-size: clamp(0.8rem, 1.1vw, 1.6rem);
     font-weight: 300;
   }
 }
