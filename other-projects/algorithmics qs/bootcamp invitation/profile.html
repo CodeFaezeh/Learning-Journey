@@ -63,7 +63,7 @@
     <!-- FINISH Info -->
     <!-- :::Dashboard Section:::for placing dashboard items -->
     <section class="section-dashboard">
-      <div class="dashboard-items">
+      <section class="dashboard-items">
         <a href="#" title="Chat" class="dashboard-eachItem d-flex"
           ><div class="d-flex item-inner-box">
             <i
@@ -173,7 +173,47 @@
             </svg>
           </i>
         </a>
-      </div>
+      </section>
+      <!-- 2-Collapsed dashboard -->
+      <section class="dashboard-items--collapsed">
+        <label
+          for="checkbox-dashboard"
+          class="d-flex label-collapsed-dashboard"
+        >
+          <input type="checkbox" id="checkbox-dashboard" />
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            id="icon-dashboard"
+          >
+            <path
+              d="M16 8L5.6 8"
+              stroke="#222222"
+              stroke-opacity="0.9"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              id="top-line"
+            />
+            <path
+              d="M18.3999 12L5.5999 12"
+              stroke="#FFCB00"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              id="middle-line"
+            />
+            <path
+              d="M13.6001 16H5.6001"
+              stroke="#222222"
+              stroke-opacity="0.9"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              id="bottom-line"
+            />
+          </svg>
+        </label>
+      </section>
     </section>
     <!-- FINISH Dashboard -->
     <!-- :::Main:::for placing resume -->
@@ -316,6 +356,7 @@
                   <img
                     src="./img/starsblueVector.svg"
                     alt="blue stars as symbol"
+                    class="icon-stars"
                   />
                 </div>
               </div>

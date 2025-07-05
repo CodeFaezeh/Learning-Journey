@@ -6,6 +6,7 @@
 }
 a {
   text-decoration: none;
+  display: inline-block;
 }
 i {
   cursor: pointer;
@@ -15,6 +16,7 @@ html {
   font-family: "Outfit";
   font-weight: 500;
   line-height: 1;
+  height: 100%;
 }
 // ::::::VARIABLES::::::
 /* :::COLORS:::*/
@@ -37,7 +39,7 @@ $white: #ffffff;
 }
 //::BODY LAYOUT
 body {
-  height: 100vh;
+  height: 100%;
 }
 .body-d-grid {
   display: grid;
@@ -79,13 +81,13 @@ body {
   border: #e8eff7 solid 1.15px;
   border-radius: 0.921rem;
   // width: 28%;
-  width: 28%;
-  height: 70%;
+  width: 30rem;
+  height: fit-content;
   gap: 0.8rem;
   padding: 1.2rem 1rem;
 }
 .img-user {
-  width: 15%;
+  width: 4.3rem;
   border-radius: 0.8rem;
 }
 .par-user {
@@ -99,10 +101,11 @@ body {
 }
 .user-greeting {
   // font-size: 1.2rem;
-  font-size: clamp(0.5rem, 0.8vw, 1.2rem);
+  font-size: 1.2rem;
 }
 .user-name {
-  font-size: clamp(0.8rem, 1.2vw, 2rem);
+  font-size: 2rem;
+  white-space: nowrap;
 }
 .chevron-d-box {
   margin-left: auto;
@@ -123,7 +126,7 @@ body {
 }
 .dashboard-eachItem {
   justify-content: space-between;
-  padding: 6px 1.8rem;
+  padding: 0.6rem 1.8rem;
   border-radius: 8px;
   transition: all 0.3s ease;
   .item-inner-box {
@@ -149,6 +152,85 @@ body {
   stroke: #6677c2;
   color: #6677c2;
 }
+/**********/ //collapsed menu
+.dashboard-items--collapsed {
+  display: none;
+}
+.label-collapsed-dashboard {
+  cursor: pointer;
+}
+
+#checkbox-dashboard {
+  display: none;
+  #icon-dashboard {
+    &:checked {
+      #top-line {
+        animation: down-rotate 0.6s ease-out both;
+      }
+      #bottom-line {
+        animation: up-rotate 0.6s ease-out both;
+      }
+      #middle-line {
+        animation: hide 0.6s ease-out forwards;
+      }
+    }
+  }
+}
+#icon-dashboard {
+  width: 40px;
+  height: 40px;
+}
+#top-line,
+#bottom-line,
+#middle-line {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes up-rotate {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, -0.88, 0.97, 0.53);
+    transform: translateY(0px);
+  }
+  30% {
+    transform-origin: center;
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translateY(-10px);
+  }
+  100% {
+    transform-origin: center;
+    transform: translateY(-10px) rotate(45deg) scale(0.9);
+  }
+}
+
+@keyframes down-rotate {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, -0.88, 0.97, 0.53);
+    transform: translateY(0px);
+  }
+  30% {
+    transform-origin: center;
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translateY(10px);
+  }
+  100% {
+    transform-origin: center;
+    transform: translateY(10px) rotate(-45deg) scale(0.9);
+  }
+}
+
+@keyframes hide {
+  29% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 //:::Main:::for placing resume
 main {
   position: relative;
@@ -195,7 +277,7 @@ main {
 // ::Card primary1 &&& Card Secondary2::
 .card-primary-info,
 .card-secondary-info {
-  height: 50rem;
+  height: 52.1rem;
   border-radius: 8px;
   background-color: $white;
   box-shadow: 0px 12px 56px 0px rgba(6, 28, 61, 0.12);
@@ -221,21 +303,19 @@ main {
 .card-userName {
   flex-direction: column;
   gap: 8px;
-  .card-userName {
-    font-size: clamp(0.8rem, 1.5vw, 2rem);
-    font-weight: 500;
-  }
-  .card-userRole {
-    font-size: clamp(0.8rem, 1.1vw, 1.6rem);
-    font-weight: 300;
-  }
+  font-size: 2rem;
+  font-weight: 500;
+}
+.card-userRole {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 .card-box-socialMedias {
   padding: 2.4rem 0;
   gap: 1.2rem;
   width: 100%;
   .socialMedias {
-    width: 12%;
+    width: 12.5%;
     transition: all 0.3s;
   }
 }
@@ -246,32 +326,32 @@ main {
   border: solid 1px rgba(black, 0.15);
   border-radius: 5px;
   padding: 1.8rem;
-  .intro-title,
-  .intro {
-    color: #1f1f1fb2;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  .intro {
-    color: rgba(34, 34, 34, 0.9);
-    margin-top: 9px;
-  }
+}
+.intro-title {
+  color: #1f1f1fb2;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.intro {
+  color: #222222e5;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.9rem;
 }
 // ::Card Seconday : section user experinces fileds::
 .card-secondary-info {
-  width: 30%;
+  width: 35%;
   gap: 2.4rem;
-  align-items: flex-start;
 }
 .title-box-info {
   font-weight: 500;
   font-size: 1.2rem;
-  color: rgba(34, 34, 34, 0.9);
+  color: #222222e5;
   margin-bottom: 1.6rem;
 }
 .innerBox-userExpertise {
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 0.7rem;
 }
 .box-expert {
   width: fit-content;
@@ -289,8 +369,9 @@ main {
 }
 .box-expertInfoNum {
   width: 100%;
-  height: 5.3rem;
+
   justify-content: space-between;
+  align-items: stretch;
   border: solid 1px rgba(black, 0.15);
   border-radius: 1rem;
   overflow: hidden;
@@ -298,7 +379,6 @@ main {
 }
 .innerBox-subtitleAndIntro {
   padding: 1rem 1.3rem;
-  padding-right: 0;
 }
 .subtitle-info {
   font-weight: 500;
@@ -312,10 +392,9 @@ main {
   color: #49454fcc;
 }
 .intro-notice-lh {
-  line-height: 1.2;
+  line-height: 1.1;
 }
 .bg-icon {
-  height: 100%;
   width: 21%;
   justify-content: center;
 }
