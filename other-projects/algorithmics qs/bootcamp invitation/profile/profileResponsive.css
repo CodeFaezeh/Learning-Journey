@@ -1,0 +1,405 @@
+/* :::COLORS:::*/
+/* Portrait Tablet */
+@media (min-width: 768px) and (orientation: portrait) {
+  .body-d-grid {
+    grid-template-rows: 8% 82%;
+  }
+}
+/* Portrait & Landscape Laptop*/
+@media (max-width: 1280px) {
+  html {
+    font-size: 56.25%;
+  }
+  .body-d-grid {
+    grid-template-rows: 11% 89%;
+  }
+  .info-box {
+    padding: 0.8rem 0.6rem;
+  }
+  .img-user {
+    width: 4rem;
+  }
+  .user-greeting {
+    font-size: 1rem;
+  }
+  .user-name {
+    font-size: 1.8rem;
+  }
+  .dashboard-items {
+    padding-left: 2.2rem;
+    padding-right: 0.5rem;
+    gap: 2rem;
+  }
+  .dashboard-icon {
+    width: 1.8vw;
+  }
+  .svg-chevron-right {
+    width: 1.6vw;
+    stroke-width: 2.2px;
+  }
+  .card-primary-info,
+  .card-secondary-info {
+    align-items: stretch;
+  }
+  .card-box-socialMedias {
+    padding: 2.4rem 0;
+    gap: 1.8rem;
+  }
+  .card-box-socialMedias .socialMedias {
+    transition: all 0.3s;
+  }
+  .card-box-socialMedias .socialMedias img {
+    width: 3.8rem;
+  }
+  .card-userImg {
+    width: 25%;
+  }
+  .card-userName {
+    font-size: 1.6vw;
+  }
+  .card-userRole {
+    font-size: 1.2vw;
+  }
+  .portfolio-sticker {
+    width: 90%;
+  }
+  .innerBox-userExpertise {
+    gap: 0.5rem;
+  }
+  .box-expert {
+    padding: 0.6vw 1vh;
+    font-size: 1.1vw;
+    gap: 0.4rem;
+  }
+  .box-expert img {
+    width: 1.2vw;
+  }
+  .intro-notice-lh {
+    line-height: 1;
+  }
+  .bg-icon img {
+    width: 2.5vw;
+  }
+  .bg-icon .icon-stars {
+    width: 5vw;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 46.875%;
+  }
+  .portfolio-sticker {
+    width: 95%;
+  }
+  .card-userName {
+    font-size: 1.6vw;
+  }
+  .card-userRole {
+    font-size: 1.3vw;
+  }
+  .intro-title,
+  .intro,
+  .subtitle-info,
+  .intro-subtitle {
+    font-size: 1.3vw;
+  }
+}
+@media (max-width: 690px) {
+  html {
+    font-size: 46.875%;
+  }
+  .body-d-grid {
+    grid-template-columns: 10% 50% 40%;
+  }
+  .section-dashboard {
+    min-height: 0;
+    padding-left: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    grid-column: 1;
+    grid-row: 1;
+    border-bottom: #cecece solid 1px;
+  }
+  .section-logo {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    grid-column: 2;
+    border-bottom: #cecece solid 1px;
+    box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+    gap: 1.2rem;
+    padding-left: 0.8rem;
+  }
+  .section-logo h1 {
+    font-size: 1.6rem;
+  }
+  .section-info {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    grid-column: 3;
+    box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  }
+  .img-user,
+  .svg-bell,
+  .img-logo,
+  .icon-box {
+    width: clamp(2.4rem, 7vw, 3.3rem);
+  }
+  .dashboard-items {
+    display: none;
+  }
+  .dashboard-items--collapsed {
+    display: block;
+    height: 100%;
+  }
+  .label-collapsed-dashboard {
+    cursor: pointer;
+    height: 100%;
+  }
+  main {
+    grid-column: 1/-1;
+  }
+  .card-primary-info {
+    width: 55%;
+  }
+  .card-primary-info .header-card-primary {
+    gap: 3.2rem;
+  }
+  .card-userName {
+    font-size: 2.2vw;
+  }
+  .card-userRole {
+    font-size: 1.8vw;
+  }
+  .intro-title,
+  .intro,
+  .subtitle-info,
+  .intro-subtitle {
+    font-size: 1.6vw;
+  }
+  .card-box-socialMedias {
+    gap: 0.1rem;
+  }
+  .card-box-socialMedias .socialMedias img {
+    width: 4.2rem;
+  }
+  .card-secondary-info {
+    width: 40%;
+  }
+  .box-expert {
+    padding: 0.6vw 1vh;
+    font-size: 1.8vw;
+  }
+  .bg-icon img {
+    width: 4vw;
+  }
+  .bg-icon .icon-stars {
+    width: 7vw;
+  }
+}
+@media (max-width: 563px) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-info {
+    padding-right: 2rem;
+  }
+  .info-box {
+    width: -moz-fit-content;
+    width: fit-content;
+    border: none;
+  }
+  .info-box .img-user {
+    border-radius: 50%;
+  }
+  .info-box .par-user,
+  .info-box .chevron-d-box {
+    display: none;
+  }
+  .portfolio-sticker {
+    height: 10rem;
+    border-radius: 0.5rem;
+  }
+  .sticker-text.bg-white-op {
+    display: none;
+  }
+  #btn-moreInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0b63e5;
+    background-color: #f0f5ff;
+    font-family: "Lexend", "Poppins", "Outfit";
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.2rem 2rem;
+    border-radius: 5px;
+    border: none;
+    margin-top: 24px;
+    transition: all 0.3s ease;
+  }
+  .btn-spinner {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-block;
+    position: relative;
+    color: #0b63e5;
+  }
+  .btn-spinner div {
+    position: absolute;
+    top: 1.56px;
+    left: 50%;
+    width: 1.5px;
+    height: 20%;
+    border-radius: 1px;
+    background: currentColor;
+    transform-origin: center 200%;
+    animation: fade 1.5s linear infinite;
+  }
+  .btn-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.4s;
+    opacity: 1;
+  }
+  .btn-spinner div:nth-child(2) {
+    transform: rotate(45deg);
+    animation-delay: -1.2s;
+    opacity: 0.9;
+  }
+  .btn-spinner div:nth-child(3) {
+    transform: rotate(90deg);
+    animation-delay: -1s;
+    opacity: 0.8;
+  }
+  .btn-spinner div:nth-child(4) {
+    transform: rotate(135deg);
+    animation-delay: -0.8s;
+    opacity: 0.7;
+  }
+  .btn-spinner div:nth-child(5) {
+    transform: rotate(180deg);
+    animation-delay: -0.6s;
+    opacity: 0.6;
+  }
+  .btn-spinner div:nth-child(6) {
+    transform: rotate(225deg);
+    animation-delay: -0.4s;
+    opacity: 0.5;
+  }
+  .btn-spinner div:nth-child(7) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+    opacity: 0.4;
+  }
+  .btn-spinner div:nth-child(8) {
+    transform: rotate(315deg);
+    animation-delay: 0s;
+    opacity: 0.3;
+  }
+  .btn-spinner.hidden {
+    display: none;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+  #btn-moreInfo.hovered {
+    color: #094fb7;
+    background-color: #cee0fa;
+  }
+  #btn-moreInfo.blurred {
+    cursor: not-allowed;
+    filter: blur(0.56px);
+  }
+  .section-card-portfolio {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-card-portfolio .card-primary-info,
+  .section-card-portfolio .card-secondary-info {
+    width: 88%;
+    height: auto;
+  }
+  .section-card-portfolio .card-primary-info .header-card-primary,
+  .section-card-portfolio .card-secondary-info .header-card-primary {
+    gap: 2.4rem;
+  }
+  .card-userName {
+    font-size: 4.5vw;
+  }
+  .card-userRole {
+    font-size: 3.4vw;
+  }
+  .card-userImg {
+    width: 23%;
+  }
+  .intro-title,
+  .intro,
+  .subtitle-info,
+  .intro-subtitle {
+    font-size: 2.6vw;
+  }
+  .card-box-introduction {
+    border: none;
+    padding: 0;
+  }
+  .card-box-socialMedias {
+    gap: clamp(1.6rem, 1vw, 10rem);
+  }
+  .card-box-socialMedias .socialMedias img {
+    width: 5.4rem;
+  }
+  .innerBox-userExpertise {
+    gap: 0.7rem;
+  }
+  .box-expert {
+    padding: 1vw 1.4vh;
+    font-size: 3vw;
+  }
+  .box-expert img {
+    width: 3.2vw;
+  }
+  .bg-icon img {
+    width: 8vw;
+  }
+  .bg-icon .icon-stars {
+    width: 12vw;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 62.5%;
+  }
+  .card-box-socialMedias .socialMedias {
+    gap: 2vw;
+  }
+  .card-box-socialMedias .socialMedias img {
+    width: 4.2rem;
+  }
+  .card-userName {
+    font-size: 5.2vw;
+  }
+  .card-userRole {
+    font-size: 3.4vw;
+  }
+  .intro-title,
+  .intro,
+  .subtitle-info,
+  .intro-subtitle {
+    font-size: 3.4vw;
+  }
+  .box-expert {
+    font-size: 4vw;
+  }
+}/*# sourceMappingURL=profileResponsive.css.map */

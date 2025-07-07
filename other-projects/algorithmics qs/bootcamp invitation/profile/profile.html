@@ -15,10 +15,11 @@
   </head>
   <body class="body-d-grid">
     <!-- :::Header:::for placing logo -->
-    <header class="section-logo d-flex">
-      <img src="./img/logo.png" alt="sample logo in yellow" />
+
+    <section class="section-logo d-flex">
+      <img src="./img/logo.png" alt="sample logo in yellow" class="img-logo" />
       <h1>Sample</h1>
-    </header>
+    </section>
     <!-- FINISH Header -->
     <!-- :::Info Section:::for placing user info badge -->
     <section class="section-info d-flex">
@@ -180,8 +181,6 @@
           for="checkbox-dashboard"
           class="d-flex label-collapsed-dashboard"
         >
-          <input type="checkbox" id="checkbox-dashboard" />
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -243,28 +242,28 @@
                   src="./img/facebookIcon.svg"
                   data-original="./img/facebookIcon.svg"
                   data-hover="./img/facebookIcon2.svg"
-                  alt="facebook logo in blue, f is the brand symbol"
+                  aria-label="Facebook"
               /></a>
               <a href="#" title="Instagram" class="socialMedias">
                 <img
                   src="./img/instagramIcon.svg"
                   data-original="./img/instagramIcon.svg"
                   data-hover="./img/instagramIcon2.svg"
-                  alt="instagram logo in red, a camera is the brand symbol"
+                  aria-label="Instagram"
               /></a>
               <a href="#" title="twitter" class="socialMedias">
                 <img
                   src="./img/twitterIcon.svg"
                   data-original="./img/twitterIcon.svg"
                   data-hover="./img/twitterIcon2.svg"
-                  alt="twitter logo in red, a blue bird is the brand symbol"
+                  aria-label="Twitter"
               /></a>
               <a href="#" title="Linkedin" class="socialMedias">
                 <img
                   src="./img/linkedinIcon.svg"
                   data-original="./img/linkedinIcon.svg"
                   data-hover="./img/linkedinIcon2.svg"
-                  alt="linkedin logo in blue, l and i are the brand symbol"
+                  aria-label="Linkedin"
               /></a>
             </section>
             <section class="card-box-introduction d-flex flex-dir-col">
@@ -291,6 +290,18 @@
                 <a class="intro" href="tel:+91-49652845732">+91-49652845732</a>
               </div>
             </section>
+            <button alt="My Data" id="btn-moreInfo">
+              <span class="btn-spinner hidden"
+                ><div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div></span
+              ><span class="btn-moreInfo--text">View More</span>
+            </button>
           </section>
           <!-- FINISH Card primary -->
           <!-- Card Secondary2:user personal info and intro -->
