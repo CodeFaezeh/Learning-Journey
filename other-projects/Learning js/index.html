@@ -4,8 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+      }
+      .d-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        width: 25%;
+        height: 50px;
+        font-size: 32px;
+        margin: 10px;
+      }
+    </style>
   </head>
-  <body>
+  <body class="d-flex">
+    <button class="buy">Buy new plane✈️</button>
+    <button class="poll">Answer the poll</button>
     <script src="./script.js"></script>
   </body>
 </html>
