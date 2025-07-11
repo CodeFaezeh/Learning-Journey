@@ -156,6 +156,7 @@ BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
 
 GOOD LUCK 😀
 */
+/*
 const poll = {
   question: "What is your favourite programming language?",
   options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
@@ -164,47 +165,104 @@ const poll = {
 };
 poll.registerNewAnswer = function () {
   let userInput = Number(
-    prompt(`What is your favourite programming language?
-        0: JavaScript
-        1: Python
-        2: Rust
-        3: C++
-        (Write option number)`)
+    prompt(
+      `${this.question}\n${this.options.join("\n")}\n(Write option number)`
+    )
   );
-  while (
-    userInput !== 0 &&
-    userInput !== 1 &&
-    userInput !== 2 &&
-    userInput !== 3
-  ) {
-    alert(`⚠️⚠️⚠️Please enter a valid Number`);
+  // check if the input is valid or loop until user enter valid number
+  while (userInput > this.options.length || typeof userInput === "string") {
+    alert(`⚠️Please enter a valid Number`);
     userInput = Number(
-      prompt(`What is your favourite programming language?
-        0: JavaScript
-        1: Python
-        2: Rust
-        3: C++
-        (Write option number)`)
+      prompt(
+        `${this.question}\n${this.options.join("\n")}\n(Write option number)`
+      )
     );
   }
-  switch (userInput) {
-    case 0:
-      this.answers[0]++;
-      break;
-    case 1:
-      this.answers[1]++;
-      break;
-    case 2:
-      this.answers[2]++;
-      break;
-    case 3:
-      this.answers[3]++;
+  if (userInput) {
+    this.answers[userInput]++;
   }
-  displayResults.call(poll);
+  this.displayResults();
+  this.displayResults("string");
 };
-poll.displayResults = function () {
-  console.log(this.answers);
+poll.displayResults = function (type = "array") {
+  if (type === "array") {
+    console.log(this.answers);
+  } else if (type === "string") {
+    console.log(`Poll Result : ${this.answers.join(",")}`);
+  }
 };
 document
   .querySelector(".poll")
   .addEventListener("click", poll.registerNewAnswer.bind(poll));
+
+const data1 = [5, 2, 3];
+const data2 = [1, 5, 3, 9, 6, 1];
+poll.displayResults.call({ answers: data1 }, "string");
+poll.displayResults.call({ answers: data2 });
+*/
+
+// 143. Immediately Invoked Function Expressions (IIFE)
+// 144. Closures
+// Coding Challenge #2
+
+/* 
+This is more of a thinking challenge than a coding challenge 🤓
+
+Take the IIFE below and at the end of the function, attach an event listener that changes the color of the selected h1 element ('header') to blue, each time the BODY element is clicked. Do NOT select the h1 element again!
+
+And now explain to YOURSELF (or someone around you) WHY this worked! Take all the time you need. Think about WHEN exactly the callback function is executed, and what that means for the variables involved in this example.
+
+GOOD LUCK 😀
+*/
+/*
+(function () {
+  const header = document.querySelector("h1");
+  header.style.color = "red";
+  document
+    .querySelector("body")
+    .addEventListener("click", () => (header.style.color = "blue"));
+})();
+*/
+
+// 149. Simple Array Methods
+//Algorithms
+const findLongestSubstring = function (s) {
+  let maxLength = 0;
+  const vowels = new Set(["a", "e", "o", "u", "i"]);
+  // loop to find the uniqe substring
+  //define a set for a current substring
+  for (let i = 0; i < s.length; i++) {
+    const subString = new Set();
+    //*find how many vowels do we have */
+    let vowelCounts = 0;
+    // loop over following character (based on choosenChar position) to add to sub Stirng
+    for (let j = i; j < s.length; j++) {
+      const char = s[j];
+      // check if the current character is in substring or not?!
+      if (subString.has(char)) {
+        break;
+      } else {
+        subString.add(char);
+
+        //check if the character is in vowel set or not?
+        if (vowels.has(char)) {
+          vowelCounts++;
+        }
+        if (vowelCounts > 0 && vowelCounts % 2 === 0) {
+          // define current Length to update max Length (otherwise max length would be infinte)
+          let currentLength = subString.size;
+          maxLength = Math.max(maxLength, currentLength);
+        }
+      }
+    }
+    //⚠️⚠️⚠️this way is wrong here for checking if statement of vowel counts we must check it during the substring expanding
+    // if (vowelCounts > 0 && vowelCounts % 2 === 0) {
+    //   // define current Length to update max Length (otherwise max length would be infinte)
+    //   let currentLength = subString.size;
+    //   maxLength = Math.max(maxLength, currentLength);
+    // }
+    console.log(subString);
+  }
+  console.log(maxLength);
+};
+findLongestSubstring("akfsefki");
